@@ -17,9 +17,10 @@ Options -Indexes
 	 RewriteBase /
 
 	# Redirect Trailing Slashes...
+	RewriteEngine On
+	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_URI} (.+)/$
-	RewriteRule ^ %1 [L,R=301]
+	RewriteRule ^(.*)$ index.php/$1 [L]
 
 	# Rewrite "www.example.com -> example.com"
 	RewriteCond %{HTTPS} !=on

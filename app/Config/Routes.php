@@ -29,16 +29,16 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::imagenManipulacion');
-$routes->get('hola', 'holamundo::index');
-$routes->get('login','login::desdeLogin');
-$routes->get('formulario','formulario::desdeform');
-$routes->post('guardar', 'Home::guarda');
-$routes->post('guardar2','home::guarda2');
-$routes->get('/poner','myControler::ponerdatos');
-$routes->get('/leer','myControler::leerdatos');
-$routes->get('/borrar','myControler::quitardatos');
-$routes->get('/destroy','myControler::borrartodo');
+$routes->get('/', 'Home::index');
+$routes->get('contactenos','c_contactenos::contactar');
+$routes->get('ufm','c_ufm::ufmedellin');
+$routes->get('login','c_loginadm::login');
+$routes->get('noticias','c_noticias::notice');
+
+
+
+
+
 
 /*
  * --------------------------------------------------------------------
