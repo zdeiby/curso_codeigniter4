@@ -1,0 +1,70 @@
+CRITICAL - 2023-06-18 21:16:51 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-18 21:19:20 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-18 21:19:22 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 226.
+ 1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(190): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-06-18 20:48:35 --> Undefined variable $show
+in APPPATH\Views\galeria.php on line 93.
+ 1 APPPATH\Views\galeria.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $show', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php', 93)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('galeria', [], true)
+ 5 APPPATH\Controllers\c_galeria.php(18): view('galeria')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_galeria->galerie()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 20:48:53 --> Undefined variable $datos
+in APPPATH\Views\galeria.php on line 97.
+ 1 APPPATH\Views\galeria.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php', 97)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('galeria', [], true)
+ 5 APPPATH\Controllers\c_galeria.php(18): view('galeria')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_galeria->galerie()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 20:52:45 --> Undefined variable $props
+in APPPATH\Views\galeria.php on line 114.
+ 1 APPPATH\Views\galeria.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $props', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php', 114)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('galeria', [], true)
+ 5 APPPATH\Controllers\c_galeria.php(18): view('galeria')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_galeria->galerie()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 20:53:49 --> Undefined variable $props
+in APPPATH\Views\galeria.php on line 115.
+ 1 APPPATH\Views\galeria.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $props', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php', 115)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('galeria', [], true)
+ 5 APPPATH\Controllers\c_galeria.php(18): view('galeria')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_galeria->galerie()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 20:54:05 --> Undefined variable $duration
+in APPPATH\Views\galeria.php on line 116.
+ 1 APPPATH\Views\galeria.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $duration', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php', 116)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\galeria.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('galeria', [], true)
+ 5 APPPATH\Controllers\c_galeria.php(18): view('galeria')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_galeria->galerie()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_galeria))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

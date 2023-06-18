@@ -34,6 +34,8 @@ $routes->get('contactenos','c_contactenos::contactar');
 $routes->get('ufm','c_ufm::ufmedellin');
 $routes->get('login','c_loginadm::login');
 $routes->get('noticias','c_noticias::notice');
+$routes->get('galeria','c_galeria::galerie');
+$routes->get('galeria-videos','c_galeria_videos::galeria_videos');
 
 
 

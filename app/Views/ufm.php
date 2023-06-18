@@ -18,7 +18,7 @@
         a la familia independiente de sus características condiciones o grupo poblacional. Trabajamos con más de 600 personas que se encuentran distribuidas en nueve 
         Centros Integrales para la Familia ubicados en toda la ciudad. A través de los Centros Integrales para la familia ejecutamos la estrategia familia Medellín
          de la siguiente manera: Gráfico.</label>
-         <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/cif.png" alt="">
+         <img width='100%' src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/cif.png" alt="">
          <h5 class='mb-4'>¿Quiénes pueden acceder a los Centros Integrales para la Familia?</h5>
     <label class='mb-4' for="">Todos los ciudadanos y familias que pertenecen a las 16 comunas y 5 corregimientos del Municipio de Medellín.</label>
     

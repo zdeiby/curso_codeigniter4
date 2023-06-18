@@ -17,19 +17,19 @@
   </thead>
   <tbody>
     <tr>
-      <td><b>Aranjuez</b> - Carrera 50ª No. 93 – 39</td>
+      <td><b>Aranjuez</b> - Carrera 50ª No. 93 - 39</td>
     </tr>
     <tr>
-      <td><b>Castilla</b> - Calle 101 No. 65 – 19</td>
+      <td><b>Castilla</b> - Calle 101 No. 65 - 19</td>
     </tr>
     <tr>
-      <td><b>Caunces</b> - Carrera 6 AB No. 47 A – 99</td>
+      <td><b>Caunces</b> - Carrera 6 AB No. 47 A - 99</td>
     </tr>
     <tr>
-      <td><b>Estadio</b> - Calle 49B NO. 77C 71</td>
+      <td><b>Estadio</b> - Calle 49B NO. 77C - 71</td>
     </tr>
     <tr>
-      <td><b>La América</b> - Carrera 92 No. 34 D – 93</td>
+      <td><b>La América</b> - Carrera 92 No. 34 D - 93</td>
     </tr>
     <tr>
       <td><b>Manrique</b> - Carrera 48 No. 63 - 33</td>
@@ -45,7 +45,9 @@
     </tr>
   </tbody>
 </table>
-<img class="pb-4" src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/maps.png" alt="">
+<div class="col">
+  <img class="pb-4" width='100%' src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/maps.png" alt="">
+</div>
 </div>
 
 
