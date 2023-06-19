@@ -8,7 +8,7 @@ Options -Indexes
 # Turning on the rewrite engine is necessary for the following rules and features.
 # FollowSymLinks must be enabled for this to work.
 <IfModule mod_rewrite.c>
-	Options +FollowSymlinks
+	#Options +FollowSymlinks
 	RewriteEngine On
 
 	# If you installed CodeIgniter in a subfolder, you will need to
@@ -17,10 +17,9 @@ Options -Indexes
 	 RewriteBase /
 
 	# Redirect Trailing Slashes...
-	RewriteEngine On
-	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*)$ index.php/$1 [L]
+	RewriteCond %{REQUEST_URI} (.+)/$
+	RewriteRule ^ %1 [L,R=301]
 
 	# Rewrite "www.example.com -> example.com"
 	RewriteCond %{HTTPS} !=on
@@ -32,7 +31,7 @@ Options -Indexes
 	# request to the front controller, index.php
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^([\s\S]*)$ index.php/$1 [L,NC,QSA]
+RewriteRule ^(.*)$ index.php/$1 [L]
 
 	# Ensure Authorization header is passed along
 	RewriteCond %{HTTP:Authorization} .
