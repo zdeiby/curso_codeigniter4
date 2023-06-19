@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 
-class c_loginadm extends BaseController{
+class c_mas_noticias extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
@@ -12,10 +12,10 @@ class c_loginadm extends BaseController{
         $this->uri = service('uri');
     }
 
-    public function login(){
+    public function masNoticias(){
         $segmentos = $this->uri->getSegments();
         $data['url']=$segmentos[0];
-        return view('estructura/nav').view('loginadmin').view('estructura/footer');
+        return view('estructura/nav',$data).view('mas_noticias').view('estructura/footer');
 }
     }
     

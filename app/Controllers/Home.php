@@ -21,6 +21,6 @@ class Home extends BaseController
       $segmentos = $this->uri->getSegments();
       $data['url']=$segmentos;
       
-      return view('welcome_message'). view('estructura/footer');
+      return view('estructura/nav').view('welcome_message'). view('estructura/footer');
     }
 }

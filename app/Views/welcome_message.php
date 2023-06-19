@@ -82,77 +82,7 @@
   </style>
 </head>
 <body>
-<div>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top nav">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">
-                <img src="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2022/03/Open-Graph-.png" alt="" width="150" height="100">
-            </a>
-            <button id="myButton" class="navbar-toggler" type="button">
-  <span class="navbar-toggler-icon"></span>
-</button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav tamano">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            ¿Quienes somos?
-                        </a>
-                        <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item liT" href="/contactenos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactenos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li><a class="dropdown-item liT" href="/ufm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad Familia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/noticias">Noticias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/multimedia">Multimedia</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="">
-                <div class="">
-                    <a href="/login"><button type="button" class="btn btn-primary custom-button">Login UFM</button></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-
-
-<br>
-
-<script>
-    function showSubMenu(elem) {
-        elem.querySelector('.submenu').classList.add('show');
-    }
-    function hideSubMenu(elem) {
-        elem.querySelector('.submenu').classList.remove('show');
-    }
-</script>
-<script>
-  // Obtener el botón y el encabezado por su ID
-  var button = document.getElementById('myButton');
-  var heading = document.getElementById('navbarSupportedContent');
-
-  // Variable para mantener el estado del botón
-  var cond = false;
-
-  // Agregar o quitar la clase al hacer clic en el botón
-  button.addEventListener('click', function() {
-    if (cond) {
-      heading.classList.remove('show');
-      cond = false;
-    } else {
-      heading.classList.add('show');
-      cond = true;
-    }
-  });
-</script>
 
 <div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">Unidad Familia Medellin</div>
 

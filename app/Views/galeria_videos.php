@@ -74,29 +74,20 @@
       <h2 class="text-center mt-1 mb-3"><?php echo "titulo"; ?></h2>
     
     </div>
-
-    <div class="col-sm-2 scrollable-container text-center mb-4">
+  <div class="col-sm-2 scrollable-container text-center mb-4">
+<?php   foreach ($multimedia as $info) { ?>
+    
       <div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div>
-      <div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div><div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div><div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div><div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div><div>
-        <label for="">Titulo 1</label><br>
-        <img src="https://www.unidadfamiliamedellin.com.co/unidadfamiliamedellin/resources/img/medsol3.png" class="imagen pt-2  pb-2" alt="">
-      </div>
+        
+        <?php
+          $videoId =$info["url"]; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
 
+          $thumbnailUrl = "https://img.youtube.com/vi/" . $videoId . "/maxresdefault.jpg";
+          echo '<img style="width:100%" src="' . $thumbnailUrl . '" alt="Miniatura del video">';
+        ?>
+        <label for="" class='pb-2'> <?php echo $info["name"] ?></label><br>
+      </div>
+     <?php   } ?>   
     </div>
   </div>
 </div>

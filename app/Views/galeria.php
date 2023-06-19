@@ -87,6 +87,7 @@
   </style>
 </head>
 <body>
+
   <div class="gallery-container" style='padding-top:135px'>
     <div class="gallery">
       <div class="selected-image">

@@ -47,7 +47,7 @@
       <div class="col">
         <div class="row">
           <div class="col"><label>Otras Noticias</label></div>
-          <div class="col"><a href="mas-noticias"><label><b>Ver todas las noticias</b></label></a></div>
+          <div class="col text-primary"><a href="mas-noticias"><label><b style='color:#00B0F6'>Ver todas las noticias</b></label></a></div>
         </div>
         <div class="scrollable-container pt-3">
           <label class="pb-3"><b>Titulo de la Noticia</b></label>
