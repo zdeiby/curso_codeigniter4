@@ -41,40 +41,16 @@
 
 <div class="container pb-3 text-center" style='padding-top:129px'>
 <h5 class="pt-2 pb-4">Todas nuestras noticias</h5>
+<?php foreach($noticias as $noticia) { ?>
     <div class="row divNoticia pb-2" >
         <div class='col notice'>
-            <img width="20%" src="https://vivirenelpoblado.com/wp-content/uploads/2022/04/La-alcaldia-de-Medellin-instala-un-Centro-Integral-de-Familia-en-la-UdeA-03-1200x800.jpg" class="foto" alt="" />
-            <p><b>Titulo de la noticia</b></p>
-                        <p>fecha: 11 de junio de 2023</p>
+            <img width="20%" src="<?php echo $noticia['url'] ?>" class="foto" alt="" />
+            <p><b><?php echo $noticia['titulo'] ?></b></p>
+                        <p> <b>Fecha: </b><?php echo $noticia['created_at'] ?></p>
         </div>
     </div>
 
-    <div class="row divNoticia pb-2" >
-        <div class='col notice'>
-            <img width="20%" src="https://vivirenelpoblado.com/wp-content/uploads/2022/04/La-alcaldia-de-Medellin-instala-un-Centro-Integral-de-Familia-en-la-UdeA-03-1200x800.jpg" class="foto" alt="" />
-            <p><b>Titulo de la noticia</b></p>
-                        <p>fecha: 11 de junio de 2023</p>
-        </div>
-    </div>
-
-    <div class="row divNoticia pb-2" >
-        <div class='col notice'>
-            <img width="20%" src="https://vivirenelpoblado.com/wp-content/uploads/2022/04/La-alcaldia-de-Medellin-instala-un-Centro-Integral-de-Familia-en-la-UdeA-03-1200x800.jpg" class="foto" alt="" />
-            <p><b>Titulo de la noticia</b></p>
-                        <p>fecha: 11 de junio de 2023</p>
-        </div>
-    </div>
-
-    <div class="row divNoticia pb-2" >
-        <div class='col notice'>
-            <img width="20%" src="https://vivirenelpoblado.com/wp-content/uploads/2022/04/La-alcaldia-de-Medellin-instala-un-Centro-Integral-de-Familia-en-la-UdeA-03-1200x800.jpg" class="foto" alt="" />
-            <p><b>Titulo de la noticia</b></p>
-                        <p>fecha: 11 de junio de 2023</p>
-        </div>
-    </div>
-
-
-    
+   <?php } ?> 
 </div>
 
 

@@ -107,8 +107,14 @@
                             <li><a class="dropdown-item liT" href="../../ufm/index.php/ufm">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad Familia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../ufm/index.php/noticias">Noticias</a>
+                    <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Noticias
+                        </a>
+                        <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item liT" href="../../ufm/index.php/noticias">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a class="dropdown-item liT" href="../../ufm/index.php/agg-noticia">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Noticia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
