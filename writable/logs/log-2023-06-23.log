@@ -1,0 +1,66 @@
+CRITICAL - 2023-06-23 01:38:23 --> Undefined variable $id
+in APPPATH\Controllers\c_mas_noticias.php on line 17.
+ 1 APPPATH\Controllers\c_mas_noticias.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_mas_noticias->masNoticias()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mas_noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 01:38:44 --> Undefined variable $id
+in APPPATH\Controllers\c_mas_noticias.php on line 17.
+ 1 APPPATH\Controllers\c_mas_noticias.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_mas_noticias->masNoticias()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mas_noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 01:43:02 --> Undefined variable $noticias
+in APPPATH\Views\mas_noticias.php on line 45.
+ 1 APPPATH\Views\mas_noticias.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $noticias', 'C:\\xampp\\htdocs\\ufm\\app\\Views\\mas_noticias.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\ufm\\app\\Views\\mas_noticias.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('mas_noticias', [], true)
+ 5 APPPATH\Controllers\c_mas_noticias.php(45): view('mas_noticias')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_mas_noticias->posteo()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mas_noticias))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 02:01:05 --> syntax error, unexpected variable "$datos"
+in APPPATH\Controllers\c_mas_noticias.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\c_mas_noticias')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\c_mas_noticias')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\c_mas_noticias', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:02:05 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\c_mas_noticias.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\c_mas_noticias')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\c_mas_noticias')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\c_mas_noticias', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:06:56 --> Undefined variable $datos
+in APPPATH\Controllers\c_mas_noticias.php on line 51.
+ 1 APPPATH\Controllers\c_mas_noticias.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_mas_noticias->miMetodo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mas_noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:07:11 --> Undefined variable $datos
+in APPPATH\Controllers\c_mas_noticias.php on line 51.
+ 1 APPPATH\Controllers\c_mas_noticias.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_mas_noticias->miMetodo()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_mas_noticias))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-23 03:09:54 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\c_mas_noticias.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_mas_noticias.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\c_mas_noticias')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\c_mas_noticias')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\c_mas_noticias', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

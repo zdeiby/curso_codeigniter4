@@ -48,25 +48,44 @@
             <img width="20%" src="<?php echo $noticia['url'] ?>" class="foto" alt="" />
             <p><b><?php echo $noticia['titulo'] ?></b></p>
                         <p> <b>Fecha: </b><?php echo $noticia['created_at'] ?></p>
-                        <div>
-                        <button class="btn btn-success editar" id="<?php echo $noticia['id']?> " data-toggle="modal" data-target="#exampleModal">Editar</button>
-                        <button id="<?php echo $noticia['id']?> "class="eliminar btn btn-danger">x</button>
+                        <div class=''>
+                        <button class="btn btn-success editar" data-noticia='<?php echo json_encode($noticia); ?>' data-toggle="modal" data-target="#exampleModal">Editar</button>
+                        <button type="submit" data-id='<?php echo json_encode($noticia); ?>'  id="<?php echo $noticia['id']?>  "class="eliminar btn btn-danger">x</button>
                     </div>
         </div>
     </div>
 
    <?php } ?> 
 </div>
+<div class="result"></div>
 
 <!-- Modal -->
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
-    $(".eliminar").click(function(){
-       let id=$(this).attr("id"); //leer atributo
-       console.log(id);
-        $(`.${id}`).hide();  //ocultar atributo
-    })
+$(".eliminar").click(function() {
+    let noticia = $(this).data('id');
+    let id = noticia.id;
+   
+    $.ajax({
+        url: "mi-controlador/mi-metodo",
+        method: "POST",
+        data: { id: id },
+        success: function(response) {
+            $(`.${id}`).hide(); // Ocultar el botón
+            console.log(response);
+            
+        },
+        error: function(xhr, status, error) {
+            // Manejar errores en la petición AJAX
+            console.log(xhr.responseText);
+        }
+    });
+});
+
+
+       
+
         $(".eliminar").hover(  //hover en jquery
             function() {
                 $(this).css({"color":"red","font-size":"20px", "cursor": "pointer"});
@@ -76,51 +95,50 @@
             }
         );
 
-   $(".editar").click(function(){ 
-    var valor = $('.divNoticia');
-    let id=$(this).attr("id"); //leer atributo
-    console.log(valor);
-       console.log(id);
-        $('.show').html(`
-        <div class="modal fade"  id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-    <form method="">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <label>ID</label>
-      <input type="text" value="${id}" class="form-control" name="id" id="" readonly>
-      <label>Imagen URL </label>
-      <input type="text" class="form-control" name="url" id="">
-      <label>Titulo</label>
-      <input type="text" class="form-control" name="titulo" id="">
-      <label>Contenido</label>
-      <textarea type="text" class="form-control" name="texto" id=""></textarea>
-      </div>
-      <div class="modal-footer">
-        <button type="button"  class="btn btn-secondary cerrar" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-      </div>
-      </form>
-    </div>
-  </div>
-</div> 
+    $(".editar").click(function() {
+    var noticia = $(this).data("noticia");
+    var id = noticia.id;
+    var url = noticia.url;
+    var titulo = noticia.titulo;
+    var contenido = noticia.texto;
+    console.log(contenido)
 
-`);  //ocultar atributo
-    })
-
+    $('.show').html(`
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form method="">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <label>ID</label>
+                            <input type="text" value="${id}" class="form-control" name="id" id="" readonly>
+                            <label>Imagen URL</label>
+                            <input type="text" class="form-control" name="url" id="" value="${url}">
+                            <label>Titulo</label>
+                            <input type="text" class="form-control" name="titulo" id="" value="${titulo}">
+                            <label>Contenido</label>
+                            <textarea type="text" class="form-control" name="texto" id="">${contenido}</textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary cerrar" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+    `);
+});
    
 
 </script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
 
-<
