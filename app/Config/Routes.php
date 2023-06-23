@@ -43,6 +43,7 @@ $routes->get('agg-noticia','c_agg_noticia::aggNoticia');
 
 $routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo');
 
+$routes->get('noticias/(:any)', 'c_pages_controller::show/$1');
 
 
 

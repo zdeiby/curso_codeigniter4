@@ -13,7 +13,7 @@ class m_noticias extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['url', 'titulo','texto'];
+    protected $allowedFields = ['url', 'titulo','texto','slug'];
 
     // Dates
     protected $useTimestamps = false;

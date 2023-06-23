@@ -35,11 +35,11 @@
     <div class="row">
       <div class="col-sm-8">
         <label class="mb-3">ÚLTIMAS NOTICIAS</label>
-        <img class="pb-2" width="100%" src=" <?php echo (end($noticias)['url']) ?>"/>
-        <label class="pb-3"><b>Creada por:</b> nombre  <?php echo (end($noticias)['created_at']) ?></label>
-        <h5 class="text-center pb-3"><?php echo (end($noticias)['titulo']) ?> </h5>
+        <img class="pb-2" width="100%" src=" <?php echo $noticias['url'] ?>"/>
+        <label class="pb-3"><b>Creada por:</b> nombre  <?php echo $noticias['created_at'] ?></label>
+        <h5 class="text-center pb-3"><?php echo $noticias['titulo'] ?> </h5>
         <p class="">
-        <?php echo (end($noticias)['texto']) ?>
+        <?php echo $noticias['texto'] ?>
         </p>
       </div>
       <div class="col">
@@ -48,7 +48,7 @@
           <div class="col text-primary"><a href="mas-noticias"><label><b style='color:#00B0F6'>Ver todas las noticias</b></label></a></div>
         </div>
         <div class="scrollable-container pt-3">
-          <?php $arreglo=array_reverse($noticias);
+          <?php $arreglo=array_reverse($noti);
            $primerElemento = true; 
            
            foreach($arreglo as $noticia){
@@ -56,26 +56,24 @@
               $primerElemento = false;
               continue;
           } ?>
-        <div class="select" data-datos='<?php echo json_encode($noticia); ?>'>
+          <div class="select" data-datos='<?php echo json_encode($noticia); ?>'>
           <label class="pb-3"><b><?=$noticia['titulo']?> </b></label>
           <img class="foto pb-3" width="90%" src="<?=$noticia['url']?>"/>
           <p class="parrafo"><?= substr($noticia['texto'], 0,100)?>...</p>
-          </div>
-          <?php } ?>
+        </div>
+      <?php } ?>
           </div>
       </div>
     </div>
   </div>
-
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
     $(".select").click(function(){
         let noticia=$(this).data('datos');
         console.log(noticia)
-        window.location.href = `./noticias/${noticia.slug}` ;
+        window.location.href = `${noticia.slug}` ;
 
     })
 </script>
-
 </body>
 </html>

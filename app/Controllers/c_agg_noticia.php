@@ -22,6 +22,7 @@ class c_agg_noticia extends BaseController{
             'titulo' => $titulo,
             'url' => $url,
             'texto' => $texto,
+            'slug' => str_replace(' ', '-', $titulo),
         ];
         
         
