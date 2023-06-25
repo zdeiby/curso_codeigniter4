@@ -84,7 +84,6 @@
 <body>
 
 
-<div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">Unidad Familia Medellin</div>
 
   
 <div class="container" style='padding-top:110px'>
