@@ -38,12 +38,16 @@ $routes->get('galeria','c_galeria::galerie');
 $routes->get('galeria-videos','c_galeria_videos::galeria_videos');
 $routes->get('mas-noticias','c_mas_noticias::masNoticias');
 $routes->get('agg-noticia','c_agg_noticia::aggNoticia');
+$routes->get('agg-videos','c_agg_videos::aggVideos');
 
 
 
-$routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo');
+$routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo'); // para recibir la peticion del ajax en C_noticias
 
-$routes->get('noticias/(:any)', 'c_pages_controller::show/$1');
+$routes->get('noticias/(:any)', 'c_pages_controller::show/$1'); // pagina dinamica
+
+$routes->get('galeria-videos/(:any)','c_pages_multimedia::show/$1'); // pagina dinamica
+
 
 
 

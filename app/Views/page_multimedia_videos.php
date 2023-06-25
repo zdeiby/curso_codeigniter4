@@ -55,8 +55,6 @@
     .masVideos , .fondo{
       cursor:pointer;
     }
-  
-    
   </style>
 </head>
 <body>
@@ -64,13 +62,12 @@
 <div class="container pt-4" style='padding-top:120px !important'>
   <div class="row">
       <div class="col-auto">
-      
-        <ul class="list-group avance- ">
+        <ul class="list-group avance-">
         <li value="0"  class='list-group-item fondo text-light activo' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-        <li value="0"  class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="0"  class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <li value="10" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <li value="20" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="30" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="30" class='list-group-item fondo text-light activo' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <li value="40" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <li value="50" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <li value="60" class='list-group-item fondo text-light '> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
@@ -81,25 +78,22 @@
         </ul>
         <div class="contenedor" ><div class="ocultar mostrar">+</div></div>
       </div>
- 
-    
-  
     
     <div class="col">
     <?php
-        $videoId = (end($multimedia)['url']) ; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
+        $videoId = $multimedia['url']; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
 
         echo '<iframe width="95%" height="450px" src="https://www.youtube.com/embed/' . $videoId . '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
         ?>
 
-      <h5 class="text-center mt-1 mb-3"><?php echo (end($multimedia)['name']) ; ?></h5>
+      <h5 class="text-center mt-1 mb-3"><?php echo $multimedia['name']; ?></h5>
     
     </div>
   <div class="col-sm-2 scrollable-container text-center mb-4">
-<?php 
+<?php  
+  $arreglo=array_reverse($noti);
 
-$arreglo=array_reverse($multimedia);
-  foreach ($arreglo as $info) { ?>
+    foreach ($arreglo as $info) { ?>
     
       <div class="masVideos" data-info='<?php echo json_encode($info)?>'>
         
@@ -132,7 +126,7 @@ $arreglo=array_reverse($multimedia);
 
   $('.masVideos').click(function(){
    let info= $(this).data('info');
-    window.location.href = `./galeria-videos/${info.slug}` ;
+    window.location.href = `${info.slug}` ;
 
   })
 

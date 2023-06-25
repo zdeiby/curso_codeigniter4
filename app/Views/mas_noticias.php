@@ -32,7 +32,9 @@
         border: 2px solid #008CC3; 
         background:#008CC3;
     }
- 
+    .notice{
+        cursor: pointer;
+    }
    
 
    
@@ -44,7 +46,7 @@
 <h5 class="pt-2 pb-4">Todas nuestras noticias</h5>
 <?php foreach($noticias as $noticia) { ?>
     <div class="row divNoticia pb-2" >
-        <div class='col notice <?php echo $noticia["id"]?>' > 
+        <div class='col notice <?php echo $noticia["id"]?>' data-nu='<?php echo json_encode($noticia); ?>'> 
             <img width="20%" src="<?php echo $noticia['url'] ?>" class="foto" alt="" />
             <p><b><?php echo $noticia['titulo'] ?></b></p>
                         <p> <b>Fecha: </b><?php echo $noticia['created_at'] ?></p>
@@ -63,6 +65,17 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
+//abrir noticia
+$(".notice").click(function(event){
+    if ($(event.target).closest("button").length === 0) {
+        let noticiaU = $(this).data('nu');
+        let slug = noticiaU.slug;
+      //  console.log(slug);
+        window.location.href = `noticias/${slug}`;
+    }
+});
+
+//ELIMINAR    
 $(".eliminar").click(function() {
     let noticia = $(this).data('id');
     let id = noticia.id;
@@ -73,12 +86,12 @@ $(".eliminar").click(function() {
         data: { id: id },
         success: function(response) {
             $(`.${id}`).hide(); // Ocultar el botón
-            console.log(response);
+           
             
         },
         error: function(xhr, status, error) {
             // Manejar errores en la petición AJAX
-            console.log(xhr.responseText);
+          //  console.log(xhr.responseText);
         }
     });
 });
@@ -101,7 +114,7 @@ $(".eliminar").click(function() {
     var url = noticia.url;
     var titulo = noticia.titulo;
     var contenido = noticia.texto;
-    console.log(contenido)
+   // console.log(contenido)
 
     $('.show').html(`
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

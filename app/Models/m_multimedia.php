@@ -13,7 +13,7 @@ class m_multimedia extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields = ['name', 'url'];
+    protected $allowedFields = ['name', 'url', 'slug'];
 
     // Dates
     protected $useTimestamps = false;
