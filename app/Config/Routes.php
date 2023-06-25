@@ -38,7 +38,7 @@ $routes->get('galeria','c_galeria::galerie');
 $routes->get('galeria-videos','c_galeria_videos::galeria_videos');
 $routes->get('mas-noticias','c_mas_noticias::masNoticias');
 $routes->get('agg-noticia','c_agg_noticia::aggNoticia');
-$routes->get('agg-videos','c_agg_videos::aggVideos');
+$routes->get('videos-agg','c_addVideo::aggVideos');
 
 
 

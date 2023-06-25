@@ -124,7 +124,7 @@
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/galeria">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/galeria-videos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                        <!--     <li><a class="dropdown-item liT" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
-                            <li><a class="dropdown-item liT" href="../../../ufm/index.php/agg-videos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a class="dropdown-item liT" href="../../../ufm/index.php/videos-agg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                           </ul>
                     </li>
                 </ul>

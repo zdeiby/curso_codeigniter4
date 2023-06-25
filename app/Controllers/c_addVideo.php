@@ -4,7 +4,7 @@ namespace App\Controllers;
 use App\Models\m_multimedia;
 
 
-class c_agg_videos extends BaseController{
+class c_addVideo extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
