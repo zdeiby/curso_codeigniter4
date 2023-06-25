@@ -43,7 +43,7 @@ public function miMetodo()
     //$request = \Config\Services::Request();
     $model=new m_noticias();
     $ident = $this->request->getVar('id');
-  //  $model->delete($ident);
+    $model->delete($ident);
     return $this->response->setJSON(['message' => 'Datos recibidos correctamente']);
 }
     

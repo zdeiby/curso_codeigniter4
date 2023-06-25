@@ -43,6 +43,7 @@
     <tr>
       <td><b>San Javier</b> - Calle 42 C 95 50</td>
     </tr>
+   
   </tbody>
 </table>
 <div class="col">

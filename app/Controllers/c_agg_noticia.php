@@ -26,10 +26,10 @@ class c_agg_noticia extends BaseController{
         ];
         
         
-        var_dump($datos);
+        //var_dump($datos);
         $model = new m_noticias();
         if($datos['titulo'] !=''){
-            var_dump($model->insert($datos)); 
+            $model->insert($datos); 
         }
        
 

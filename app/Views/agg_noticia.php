@@ -43,7 +43,7 @@
   titulo.addEventListener('input', function() {
     var valor =titulo.value;
     tituloActualizado.textContent = valor;
-    console.log(valor);
+  //  console.log(valor);
   });
 
   var texto = document.getElementById('texto');
@@ -52,7 +52,7 @@
   texto.addEventListener('input', function() {
     var valor =texto.value;
     textoActualizado.textContent = valor;
-    console.log(valor);
+    //console.log(valor);
   });
 
   var url = document.getElementById('url');
@@ -61,7 +61,7 @@
   url.addEventListener('input', function() {
     var valor =url.value;
     urlActualizado.setAttribute('src', valor);
-    console.log(valor);
+   // console.log(valor);
   });
 
 </script>>

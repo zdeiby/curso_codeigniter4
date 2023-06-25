@@ -38,59 +38,108 @@
       border:2px #008CC3 !important;
       background:#008CC3 !important;
     }
+    .ocultar{
+      background: #00B0F6;
+      width:30px;
+      border-radius: 7px;
+      display:flex;
+      justify-content: space-around;
+      font-size:20px;
+      font-weight: 1000;
+      cursor:pointer;
+      
+    }
+    .ocultar:hover{
+      background: #008CC3;
+    }
+    .masVideos , .fondo{
+      cursor:pointer;
+    }
+  
+    
   </style>
 </head>
 <body>
     
 <div class="container pt-4" style='padding-top:120px !important'>
   <div class="row">
-    <?php if (true): ?>
-      <div class="col-sm-2">
-        <p>Avance</p>
-        <ul class="list-group">
-          <li value="0"  class='list-group-item fondo text-light activo' > 10%</b></li>
-          <li value="10" class='list-group-item fondo text-light ' > 20%</b></li>
-          <li value="20" class='list-group-item fondo text-light ' > 30%</b></li>
-          <li value="30" class='list-group-item fondo text-light activo' > 40%</b></li>
-          <li value="40" class='list-group-item fondo text-light ' > 50%</b></li>
-          <li value="50" class='list-group-item fondo text-light ' > 60%</b></li>
-          <li value="60" class='list-group-item fondo text-light '> 70%</b></li>
-          <li value="70" class='list-group-item fondo text-light ' > 80%</b></li>
-          <li value="80" class='list-group-item fondo text-light  mb-4'> 90%</b></li>
+      <div class="col-auto">
+      
+        <ul class="list-group avance- ">
+        <li value="0"  class='list-group-item fondo text-light activo' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+        <li value="0"  class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="10" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="20" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="30" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="40" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="50" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="60" class='list-group-item fondo text-light '> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="70" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="80" class='list-group-item fondo text-light  mb-2'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
           <div class="contenedor" ><div class="ocultar">-</div></div>
+          
         </ul>
+        <div class="contenedor" ><div class="ocultar mostrar">+</div></div>
       </div>
-    <?php else: ?>
-      <div class="col-sm-1"><div class="contenedor" onclick="setShow(true)"><div class="ocultar">+</div></div></div>
-    <?php endif; ?>
+ 
+    
+  
     
     <div class="col">
     <?php
-        $videoId = "-1xwHxEiPf4"; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
+        $videoId = (end($multimedia)['url']) ; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
 
         echo '<iframe width="95%" height="450px" src="https://www.youtube.com/embed/' . $videoId . '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
         ?>
 
-      <h2 class="text-center mt-1 mb-3"><?php echo "titulo"; ?></h2>
+      <h5 class="text-center mt-1 mb-3"><?php echo (end($multimedia)['name']) ; ?></h5>
     
     </div>
   <div class="col-sm-2 scrollable-container text-center mb-4">
-<?php   foreach ($multimedia as $info) { ?>
+<?php 
+
+$arreglo=array_reverse($multimedia);
+  foreach ($arreglo as $info) { ?>
     
-      <div>
+      <div class="masVideos" data-info='<?php echo json_encode($info)?>'>
         
         <?php
+
           $videoId =$info["url"]; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
 
           $thumbnailUrl = "https://img.youtube.com/vi/" . $videoId . "/maxresdefault.jpg";
           echo '<img style="width:100%" src="' . $thumbnailUrl . '" alt="Miniatura del video">';
         ?>
-        <label for="" class='pb-2'> <?php echo $info["name"] ?></label><br>
+       <label for="" class='pb-2'> <?php echo $info["name"] ?></label><br>
       </div>
      <?php   } ?>   
     </div>
   </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+    $('.mostrar').hide();
+  $('.ocultar').click(function(){
+    $('.avance-').hide();
+    $('.mostrar').show();
+  })
 
+  $('.mostrar').click(function(){
+    $('.avance-').show();
+    $('.mostrar').hide();
+    
+  })
+
+  $('.masVideos').click(function(){
+   let info= $(this).data('info');
+    window.location.href = `./galeria-videos/${info.slug}` ;
+
+  })
+
+  $('.fondo').click(function(){
+    $(this).addClass('activo');
+  })
+
+</script>
 </body>
 </html>
