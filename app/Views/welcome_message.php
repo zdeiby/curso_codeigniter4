@@ -77,7 +77,7 @@
     }
     .img2{
     height: 300px !important;
-    border-radius:2% ipor !important;
+    border-radius:2%  !important;
 }
   </style>
 </head>

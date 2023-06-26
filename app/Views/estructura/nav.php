@@ -77,7 +77,10 @@
     }
     .img2{
     height: 300px !important;
-    border-radius:2% ipor !important;
+    border-radius:2% !important;
+}
+.nav-link:hover{
+  border-bottom:1px solid #00B0F6 !important;
 }
   </style>
     <title>Document</title>
@@ -89,17 +92,22 @@
             <a class="navbar-brand" href="../../ufm/index.php">
                 <img src="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2022/03/Open-Graph-.png" alt="" width="150" height="100">
             </a>
-            <button id="myButton" class="navbar-toggler" type="button">
-  <span class="navbar-toggler-icon"></span>
+            
+  <span class="navbarr-icon"></span>
 </button>
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav tamano">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../../ufm/index.php">Inicio</a>
+                <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
+                        <a class="nav-link dropdown" href="../../../ufm/index.php" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
+                            Inicio
+                        </a>
+                        <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item liT" href="../../../ufm/index.php/editar-inicio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown" href="../../../ufm/index.php/ufm" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
                             ¿Quienes somos?
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
@@ -108,7 +116,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown" href="../../../ufm/index.php/noticias" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
                             Noticias
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
@@ -117,7 +125,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
                             Multimedia
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
@@ -149,25 +157,7 @@
         elem.querySelector('.submenu').classList.remove('show');
     }
 </script>
-<script>
-  // Obtener el botón y el encabezado por su ID
-  var button = document.getElementById('myButton');
-  var heading = document.getElementById('navbarSupportedContent');
 
-  // Variable para mantener el estado del botón
-  var cond = false;
-
-  // Agregar o quitar la clase al hacer clic en el botón
-  button.addEventListener('click', function() {
-    if (cond) {
-      heading.classList.remove('show');
-      cond = false;
-    } else {
-      heading.classList.add('show');
-      cond = true;
-    }
-  });
-</script>
 <div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">Unidad Familia Medellin</div>
 
   
