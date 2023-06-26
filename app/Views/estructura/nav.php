@@ -98,17 +98,18 @@
 
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav tamano">
-                <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown" href="../../../ufm/index.php" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
-                            Inicio
+                <li class="nav-item dropdown inicio" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
+                        <a class="nav-link dropdown "   id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
+                            Inicio <b style="color:red" class="delete">x</b>
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item liT" href="../../../ufm/index.php">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/editar-inicio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                        </ul>
+                          </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown" href="../../../ufm/index.php/ufm" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
-                            ¿Quienes somos?
+                        <a class="nav-link dropdown"  id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
+                            ¿Quienes somos? <b style="color:red" class="delete">x</b>
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/contactenos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactenos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
@@ -116,8 +117,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown" href="../../../ufm/index.php/noticias" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
-                            Noticias
+                        <a class="nav-link dropdown"  id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
+                            Noticias <b style="color:red" class="delete">x</b>
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/noticias">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
@@ -125,8 +126,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
-                        <a class="nav-link dropdown" href="#" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
-                            Multimedia
+                        <a class="nav-link dropdown" hre id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
+                            Multimedia <b style="color:red" class="delete">x</b>
                         </a>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item liT" href="../../../ufm/index.php/galeria">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
@@ -148,6 +149,13 @@
 
 
 <br>
+<div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">
+<div>Unidad Familia Medellin </div>
+<div><label style="font-size:15px" class='editar'>Editar&nbsp;&nbsp;&nbsp;</label></div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
 <script>
     function showSubMenu(elem) {
@@ -156,9 +164,27 @@
     function hideSubMenu(elem) {
         elem.querySelector('.submenu').classList.remove('show');
     }
+    $('.delete').hide();  //borrar oculto
+    
+    $('.editar').click(function(){
+     // $(this).addClass('hidden');
+     $('.delete').show();
+
+     $(document).ready(function () {
+        $('.tamano li').click(function () {
+            $(this).hide();
+            console.log("diste click");
+        });
+    });
+    })
+    
+
+    
+
+ 
+
 </script>
 
-<div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">Unidad Familia Medellin</div>
 
   
 
