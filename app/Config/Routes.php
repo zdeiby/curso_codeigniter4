@@ -40,10 +40,13 @@ $routes->get('mas-noticias','c_mas_noticias::masNoticias');
 $routes->get('agg-noticia','c_agg_noticia::aggNoticia');
 $routes->get('videos-agg','c_addVideo::aggVideos');
 $routes->get('editar-inicio','c_editar_inicio::editar');
+$routes->get('add-nav','c_add_nav::editarNav');
+$routes->get('nav','c_nav::nav');
 
 
 
 $routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo'); // para recibir la peticion del ajax en C_noticias
+$routes->post('aprobar', 'c_nav::navE'); // para recibir la peticion del ajax en NAV para contenido editable
 
 $routes->get('noticias/(:any)', 'c_pages_controller::show/$1'); // pagina dinamica
 
