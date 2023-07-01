@@ -14,14 +14,18 @@ class c_nav extends BaseController{
 
     public function nav(){
         $segmentos = $this->uri->getSegments();
-        $data['url']=$segmentos[0];
-        $editable= $this->request->getVar('editable');
-        echo $editable."HOLAAAA";
+        $data['url']=$segmentos[0]; 
         return view('estructura/nav');
 }
     public function navE(){
-      //  $editable= $this->request->getVar('editable');
-       // echo $editable."HOLAAAA";
+        $menu1= $this->request->getVar('menu');
+    
+        
+        $data=[
+            "menu"=>$menu1,
+           
+        ];
+      //   return print_r($data);
     }
     }
     

@@ -42,17 +42,19 @@ $routes->get('videos-agg','c_addVideo::aggVideos');
 $routes->get('editar-inicio','c_editar_inicio::editar');
 $routes->get('add-nav','c_add_nav::editarNav');
 $routes->get('nav','c_nav::nav');
+$routes->get('add','C_guardarImg::guardarImg');
 
 
 
 $routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo'); // para recibir la peticion del ajax en C_noticias
-$routes->post('aprobar', 'c_nav::navE'); // para recibir la peticion del ajax en NAV para contenido editable
+$routes->post('mi-controlador/aprobar', 'c_nav::navE'); // para recibir la peticion del ajax en NAV para contenido editable
+$routes->post('add-img','C_guardarImg::guardarImg2');
 
 $routes->get('noticias/(:any)', 'c_pages_controller::show/$1'); // pagina dinamica
 
 $routes->get('galeria-videos/(:any)','c_pages_multimedia::show/$1'); // pagina dinamica
 
-
+$routes->get('uploads/(:any)', 'UploadsController::show/$1');  //carga de imagenes
 
 
 

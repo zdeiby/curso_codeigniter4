@@ -109,11 +109,12 @@ $(".eliminar").click(function() {
         );
 
     $(".editar").click(function() {
-    var noticia = $(this).data("noticia");
-    var id = noticia.id;
-    var url = noticia.url;
-    var titulo = noticia.titulo;
-    var contenido = noticia.texto;
+    let noticia = $(this).data("noticia");
+    console.log(noticia)
+    let id = noticia.id;
+    let url = noticia.url;
+    let titulo = noticia.titulo;
+    let contenido = noticia.texto;
    // console.log(contenido)
 
     $('.show').html(`
@@ -136,7 +137,9 @@ $(".eliminar").click(function() {
                             <input type="text" class="form-control" name="titulo" id="" value="${titulo}">
                             <label>Contenido</label>
                             <textarea type="text" class="form-control" name="texto" id="">${contenido}</textarea>
-                        </div>
+                            <input type="text" class="form-control" name="prueba" id="">
+
+                            </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary cerrar" data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-primary">Save changes</button>

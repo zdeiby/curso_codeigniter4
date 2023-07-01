@@ -31,7 +31,7 @@ class userModel extends Model
     ];
     protected $validationMessages   = [
         'email'=>[
-            'is_unique'=>'lo sentimos papu, este email ya existe'
+            'is_unique'=>'correo ya existe'
         ]
     ];
     protected $skipValidation       = false;
@@ -57,8 +57,8 @@ class userModel extends Model
 
         return $result;
     }
-    public function getOne($id){
-        $sql = "SELECT * FROM users WHERE id='$id';";
+    public function getOne($id, $documento){
+        $sql = "SELECT * FROM users WHERE id='$id' AND documento='$documento';";
         $query=$this->db->query($sql);
         $result = $query->getResult();
 

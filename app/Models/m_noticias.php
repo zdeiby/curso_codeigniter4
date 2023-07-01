@@ -38,4 +38,7 @@ class m_noticias extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+   
+
 }
