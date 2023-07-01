@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+      window.onload = function() {
+        // Verificar la compatibilidad del navegador con la síntesis de voz
+        if ('speechSynthesis' in window) {
+          var msg = new SpeechSynthesisUtterance();
+          var voices = speechSynthesis.getVoices();
+
+          // Establecer el texto a reproducir
+          msg.text = 'Selecciona el texto que desees y con gusto lo leeré por ti';
+
+          // Establecer la voz que se utilizará (opcional)
+          msg.voice = voices[0]; // Puedes ajustar el índice según las voces disponibles en tu navegador
+
+          // Reproducir el mensaje de voz
+          speechSynthesis.speak(msg);
+        }
+      };
+    </script>
   <title>Encabezado con navegación completa</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -232,12 +250,13 @@
 
 
 <div>
-    <span id="selected-text"></span>
+    <span id="selected-text" value="hola">holaa</span>
     <button id="speak-btn" style="padding: 0; border: none; background: none;">
     <img src="https://cdn.icon-icons.com/icons2/1132/PNG/512/1486348532-music-play-pause-control-go-arrow_80458.png" alt="" style="width: 100%; height: auto;">
     </button>
 
 </div>
+<audio id="my-audio" src="ruta-del-audio.mp3" autoplay></audio>
 <!----- FOOTER ------>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -390,6 +409,7 @@
 });
 
     </script>
+ <!-- AUDIO AUTOMATICO -->
  
 
  <script>
@@ -398,10 +418,14 @@
 var speakBtn = document.getElementById('speak-btn');
 var selectedText = document.getElementById('selected-text');
 
+    // Hacer clic automáticamente en el botón al cargar la página
+
 // Función para mostrar u ocultar el botón de reproducir y establecer el texto seleccionado
 function toggleSpeakBtn(show, text) {
-    speakBtn.style.display = show ? 'inline-block' : 'none';
+ 
+     speakBtn.style.display = show ? 'inline-block' : 'none';
     selectedText.innerText = text;
+   
 }
 
 // Agregar evento de clic al botón de reproducir
