@@ -20,9 +20,11 @@ class C_guardarImg extends BaseController{
 public function guardarImg2()
 {
     $file = $this->request->getFile('formData');
+    $slug = $this->request->getVar('slug');
 
+    echo $slug;
     if ($file->isValid()) {
-        $newName ="imagen1.jpg";
+        $newName =$slug;
         $destination = ROOTPATH . 'uploads/' . $newName;
     
         // Verificar si ya existe una imagen con el mismo nombre

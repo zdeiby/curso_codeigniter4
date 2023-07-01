@@ -23,8 +23,9 @@ lalal
 
             var formData = new FormData();
             formData.append('formData', $('#imagen')[0].files[0]);
-            
-            console.log(formData.get('formData')); // Mueve esta línea aquí
+            formData.append('slug','add.jpg');
+
+            console.log(formData); // Mueve esta línea aquí
 
             $.ajax({
                 url: "add-img",
@@ -34,7 +35,7 @@ lalal
                 contentType: false,
                 success: function(response) {
                     console.log(response);
-                    window.location.reload();
+                   // window.location.reload();
                 },
                 error: function(xhr, status, error) {
                     console.log(xhr.responseText);
