@@ -159,19 +159,19 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="upload-button position-relative">
-                            <img src="http://localhost/ufm/uploads/fileInput1.jpg" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
+                            <img src="<?php echo base_url('uploads/fileInput1.jpg'); ?>" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
                             <input type="file" id="fileInput1" >
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="upload-button position-relative">
-                            <img src="http://localhost/ufm/uploads/fileInput2.jpg" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
+                            <img src="<?php echo base_url('uploads/fileInput2.jpg'); ?>" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
                             <input type="file" id="fileInput2">
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="upload-button position-relative">
-                            <img src="http://localhost/ufm/uploads/fileInput3.jpg" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
+                            <img src="<?php echo base_url('uploads/fileInput3.jpg'); ?>" style="height: 400px !important; border-radius: 5%;" class="d-block w-100 imagen" alt="...">
                             <input type="file" id="fileInput3">
                         </div>
                     </div>
@@ -207,19 +207,19 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="upload-button position-relative">
-              <img src="http://localhost/ufm/uploads/fileInputC1.jpg" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
+              <img src="<?php echo base_url('uploads/fileInputC1.jpg'); ?>" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
               <input type="file" id="fileInputC1">
             </div>
           </div>
           <div class="carousel-item">
             <div class="upload-button position-relative">
-              <img src="http://localhost/ufm/uploads/fileInputC2.jpg" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
+              <img src="<?php echo base_url('uploads/fileInputC2.jpg'); ?>" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
               <input type="file" id="fileInputC2">
             </div>
           </div>
           <div class="carousel-item">
             <div class="upload-button position-relative">
-              <img src="http://localhost/ufm/uploads/fileInputC3.jpg" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
+              <img src="<?php echo base_url('uploads/fileInputC3.jpg'); ?>" style="height:400px !important; border-radius:5%;" class="d-block w-100 imagen" alt="...">
               <input type="file" id="fileInputC3">
             </div>
           </div>
@@ -256,7 +256,7 @@
     </button>
 
 </div>
-<audio id="my-audio" src="ruta-del-audio.mp3" autoplay></audio>
+
 <!----- FOOTER ------>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
