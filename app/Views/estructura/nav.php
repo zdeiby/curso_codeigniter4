@@ -104,6 +104,16 @@
   background:#00B0F6 !important;
   border:2px solid #00B0F6 !important;
 }
+#speak-btn{
+ background: #b3e0f2 !important;
+ width: 3%;
+ border-radius:50%;
+ z-index: 9999 !important;
+ 
+}
+#speak-btn:hover{
+ background: #00B0F6 !important;
+}
   </style>
     <title>Document</title>
 </head>
@@ -188,15 +198,34 @@
 
 
 <br>
-<div style=" background-color: #00B0F6; width:100%; height:40px; font-size:25px; color:#ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top ">
-<div>Unidad Familia Medellin </div>
-<div><label style="font-size:15px; background:#008CC3; border:2px solid #008CC3; border-radius:5px" class='borrar'>Eliminar</label><a  style='decoration:none; color: white !important; padding-left:4px'><label style="font-size:15px; background:#008CC3; border:2px solid #008CC3; border-radius:5px" class='btn-editar'>Editar Menu</label></a></div>
+<div style="background-color: #00B0F6; width: 100%; height: 40px; font-size: 25px; color: #ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top">
+  <div>Unidad Familia Medellin</div>
+  <div class="mobile-buttons">
+    <label style="font-size: 15px; background: #008CC3; border: 2px solid #008CC3; border-radius: 5px" class="borrar">Eliminar</label>
+    <a style="text-decoration: none; color: white !important; padding-left: 4px"><label style="font-size: 15px; background: #008CC3; border: 2px solid #008CC3; border-radius: 5px" class="btn-editar">Editar Menu</label></a>
+  </div>
+</div>
+
+<style>
+  @media (max-width: 767px) {
+    .mobile-buttons {
+      display: none;
+    }
+  }
+</style>
+
+<div>
+    <span id="selected-text" value="hola">holaa</span>
+    <button id="speak-btn" style="padding: 0; border: none; background: none;">
+    <img src="https://cdn.icon-icons.com/icons2/1132/PNG/512/1486348532-music-play-pause-control-go-arrow_80458.png" alt="" style="width: 100%; height: auto;">
+    </button>
 
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="<?php echo TALK; ?> "></script>
 <script>
     function showSubMenu(elem) {
         elem.querySelector('.submenu').classList.add('show');

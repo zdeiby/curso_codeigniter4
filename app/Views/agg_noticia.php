@@ -28,9 +28,9 @@
         </div>
         <div class="col" >
             <img id='urlActualizado' class="pb-2" width="80%" src="https://img.freepik.com/foto-gratis/resumen-superficie-texturas-muro-piedra-hormigon-blanco_74190-8189.jpg"/>
-            <textarea style="border: none; text-align: center; font-size:18px;" readonly id="tituloActualizado" cols="55" rows="2">titulo </textarea >
-            <h2></h2>
-            <textarea style="border: none;" readonly id="textoActualizado" name="" id="" cols="55" rows="10">Texto de la noticia</textarea>
+            <textarea style="border: none; text-align: center; font-size:18px;" readonly id="tituloActualizado" cols="auto" rows="2">titulo </textarea >
+
+            <textarea style="border: none;" readonly id="textoActualizado" name="" id="" cols="auto" rows="10">Texto de la noticia</textarea>
         </div>
     </div>
 </div>

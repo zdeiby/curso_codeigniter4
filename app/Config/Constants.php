@@ -14,6 +14,7 @@
  | existing namespaces of App\* namespaced-classes.
  */
 defined('APP_NAMESPACE') || define('APP_NAMESPACE', 'App');
+defined('TALK') || define('TALK', '../../../ufm/resources/js/talk.js');   //constante llamada
 
 /*
  | --------------------------------------------------------------------------

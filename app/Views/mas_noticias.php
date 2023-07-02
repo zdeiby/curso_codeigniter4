@@ -35,7 +35,14 @@
     .notice{
         cursor: pointer;
     }
-   
+   .editar{
+    background:#008CC3 !important;
+    border:1px solid white !important;
+   }
+   .editar:hover{
+    background:#00B0F6 !important;
+    border:1px solid white !important;
+   }
 
    
 </style>
@@ -51,7 +58,7 @@
             <p><b><?php echo $noticia['titulo'] ?></b></p>
                         <p> <b>Fecha: </b><?php echo $noticia['created_at'] ?></p>
                         <div class=''>
-                        <button class="btn btn-success editar" data-noticia='<?php echo json_encode($noticia); ?>' data-toggle="modal" data-target="#exampleModal">Editar</button>
+                        <button  class="btn btn-success editar" data-noticia='<?php echo json_encode($noticia); ?>' data-toggle="modal" data-target="#exampleModal">Editar</button>
                         <button type="submit" data-id='<?php echo json_encode($noticia); ?>'  id="<?php echo $noticia['id']?>  "class="eliminar btn btn-danger">x</button>
                     </div>
         </div>

@@ -25,9 +25,8 @@
             </form>
         </div>
         <div class="col">
-        <iframe id='urlActualizado' width="80%" height="250" src="" title="Python en una hora para principiantes!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <textarea style="border: none; text-align: center; font-size:18px;" readonly id="tituloActualizado" cols="55" rows="2">titulo </textarea >
-            <h2></h2>
+            <iframe id='urlActualizado' width="80%" height="250" src="" title="Python en una hora para principiantes!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <textarea style="border: none; text-align: center; font-size:18px;" readonly id="tituloActualizado" cols="auto" rows="2">titulo </textarea >
         </div>
     </div>
 </div>
@@ -78,7 +77,7 @@ if (valor.includes("v=") && (valor.includes("?") || valor.includes("&"))) {
 
   });
 
-</script>>
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
     

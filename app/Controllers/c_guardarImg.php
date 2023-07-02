@@ -45,7 +45,5 @@ public function guardarImg2()
         return $this->response->setStatusCode(400)->setJSON(['error' => 'No se pudo subir el archivo.']);
     }
 }
-
-
     }
     

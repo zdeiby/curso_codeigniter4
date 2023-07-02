@@ -13,7 +13,7 @@
     </form>
     </div>
 lalal
-    <img src="http://localhost/ufm/uploads/imagen1.jpg" alt="hola">
+    <img src="http://localhost/ufm/uploads/add.jpg" alt="hola">
     lalal
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -35,7 +35,7 @@ lalal
                 contentType: false,
                 success: function(response) {
                     console.log(response);
-                   // window.location.reload();
+                    window.location.reload();
                 },
                 error: function(xhr, status, error) {
                     console.log(xhr.responseText);
