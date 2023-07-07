@@ -43,6 +43,8 @@ $routes->get('editar-inicio','c_editar_inicio::editar');
 $routes->get('add-nav','c_add_nav::editarNav');
 $routes->get('nav','c_nav::nav');
 $routes->get('add','C_guardarImg::guardarImg');
+$routes->get('nuevapagina','C_admin_page::adminPage');
+
 
 
 

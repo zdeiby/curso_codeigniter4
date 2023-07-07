@@ -186,10 +186,10 @@
               </label>
                  
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li1" href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li1" href="../../../ufm/index.php/nuevapagina"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                          <!--   <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li2" href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
                        <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
-                            <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a lit elemento-lectura3" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editar apartado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                         <!--   <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a lit elemento-lectura3" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editar apartado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
                           </ul>
                           
                     </li>
@@ -261,7 +261,9 @@
       cond = true;
     }
   });
- let m5= $('#m5').text();
+  
+ let m5= $('#m5').text(sessionStorage.getItem('menu'));
+ $('.li1').text(sessionStorage.getItem('menu'));
  console.log(m5, "nada")
    if(m5 ==''){
     $('.showadd').hide();
@@ -288,6 +290,7 @@
           if(confirmar){
               $(this).next('a').hide();
               $(this).hide();
+              sessionStorage.setItem('menu','');
           }
         });
       }
@@ -316,6 +319,8 @@ if(sessionStorage.getItem('audio')=='false'){
    })
 }
     
+
+
     $('.btn-editar').click(function(){
       var nombre = '<?php echo $tof; ?>';
       $('.delete').hide();
@@ -342,6 +347,7 @@ if(sessionStorage.getItem('audio')=='false'){
 
           $('.bton').click(function(e){
             let menu = $('#menu').val();
+            sessionStorage.setItem('menu',menu);
             let m1= $('#m1').text();
             let m2= $('#m2').text();
             let m3= $('#m3').text();
