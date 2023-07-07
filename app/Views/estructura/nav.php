@@ -40,7 +40,7 @@
       color: inherit;
     }
 
-    .liT:hover {
+    .liT elemento-lectura:hover {
       background: #e5e5e5;
     }
 
@@ -104,6 +104,15 @@
   background:#00B0F6 !important;
   border:2px solid #00B0F6 !important;
 }
+
+.btn-lectura:hover{
+  background:#00B0F6 !important;
+  border:2px solid #00B0F6 !important;
+}
+.activo{
+  background:green !important;
+  border:2px green !important;
+}
 #speak-btn{
  background: #b3e0f2 !important;
  width: 3%;
@@ -134,53 +143,53 @@
                 <li class="nav-item dropdown inicio" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                        <b class="delete ">x</b>
                 <label class="nav-link dropdown"   id="navbarDropdown"  role="button" data-bs="dropdown" aria-expanded="false" contenteditable="<?php echo $tof ?>">
-                          <label id="m1" >  Inicio</label>
+                          <label id="m1"  class="elemento-lectura">  Inicio</label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/editar-inicio"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/editar-inicio"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                           </ul>
                     </li>
                     <li class="nav-item dropdown " onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                     <b class="delete ">x</b> <label class="nav-link dropdown "   id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false" contenteditable="<?php echo $tof ?>">
-                    <label id="m2"> ¿Quienes somos?</label>
+                    <label id="m2" class="elemento-lectura" > ¿Quienes somos?</label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/contactenos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactenos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/ufm"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad Familia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/contactenos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactenos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/ufm"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad Familia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                          <b class="delete text-center">x</b> <label class="nav-link dropdown "   id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false"contenteditable="<?php echo $tof ?>">
-                         <label id="m3">  Noticias</label>
+                         <label id="m3" class="elemento-lectura">  Noticias</label>
               </label>
                         <ul class="dropdown-menu submenu div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/noticias"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/agg-noticia"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Noticia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/noticias"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-noticia"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Noticia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown " onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                     <b class="delete ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x</b> <label class="nav-link dropdown "   id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false"contenteditable="<?php echo $tof ?>">
-                    <label id="m4">  Multimedia</label>
+                    <label id="m4" class="elemento-lectura">  Multimedia</label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT" href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                       <!--     <li><a class="dropdown-item liT" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
-                            <li><b  class="delete b" >x</b><a  class="dropdown-item liT a" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                       <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
+                            <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                           </ul>
                     </li>
         
                     <li class="nav-item dropdown showadd" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                     <b class="delete ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x</b> <label class="nav-link dropdown "   id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false"contenteditable="<?php echo $tof ?>">
-                    <label id="m5"></label>
+                    <label id="m5" class="elemento-lectura"></label>
               </label>
                  
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><b  class="delete b" >x</b><a class="dropdown-item liT li1" href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                         <!--   <li><b  class="delete b" >x</b><a class="dropdown-item liT li2" href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
-                       <!--     <li><a class="dropdown-item liT" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
-                            <li><b  class="delete b" >x</b><a  class="dropdown-item liT a lit3" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editar apartado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li1" href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                         <!--   <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li2" href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
+                       <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
+                            <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a lit elemento-lectura3" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editar apartado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                           </ul>
                           
                     </li>
@@ -188,8 +197,8 @@
                 </ul>
             </div>
             <div class="">
-                <div class="">
-                    <a href="../../../ufm/index.php/login"><button type="button" class="btn btn-primary custom-button">Login UFM</button></a>
+                <div class="elemento-lectura">
+                    <a href="../../../ufm/index.php/login"><button type="button" class="btn btn-primary custom-button ">Login UFM</button></a>
                 </div>
             </div>
         </div>
@@ -199,8 +208,9 @@
 
 <br>
 <div style="background-color: #00B0F6; width: 100%; height: 40px; font-size: 25px; color: #ffffff !important" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between border-bottom fixed-top">
-  <div>Unidad Familia Medellin</div>
+  <div class="elemento-lectura">Unidad Familia Medellin</div>
   <div class="mobile-buttons">
+  <label style="font-size: 15px; background: #008CC3; border: 2px solid #008CC3; border-radius: 5px" class="btn-lectura">Lectura automatica</label>
     <label style="font-size: 15px; background: #008CC3; border: 2px solid #008CC3; border-radius: 5px" class="borrar">Eliminar</label>
     <a style="text-decoration: none; color: white !important; padding-left: 4px"><label style="font-size: 15px; background: #008CC3; border: 2px solid #008CC3; border-radius: 5px" class="btn-editar">Editar Menu</label></a>
   </div>
@@ -226,6 +236,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script src="<?php echo TALK; ?> "></script>
+<script src="<?php echo AUTO; ?> "></script>
 <script>
     function showSubMenu(elem) {
         elem.querySelector('.submenu').classList.add('show');
@@ -284,6 +295,26 @@
     })
 
    let datos=false;
+
+if(sessionStorage.getItem('audio')=='true'){
+  $('.btn-lectura').attr("class","activo");
+  $('.activo').click(function(){
+    $('.activo').attr("class","btn-lectura")
+    sessionStorage.setItem('audio', 'false');
+    $('.btn-lectura').text('Lectura automatica');
+    location.reload();
+   })
+   
+}
+if(sessionStorage.getItem('audio')=='false'){ 
+  $('.activo').attr("class","btn-lectura")
+ $('.btn-lectura').click(function(){
+  $('.btn-lectura').attr("class","activo")
+    sessionStorage.setItem('audio', 'true');
+    $('.activo').text('Lectura automatica activa');
+    location.reload();
+   })
+}
     
     $('.btn-editar').click(function(){
       var nombre = '<?php echo $tof; ?>';

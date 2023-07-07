@@ -63,33 +63,33 @@
   <div class="row">
       <div class="col-auto">
         <ul class="list-group avance-">
-        <li value="0"  class='list-group-item fondo text-light activo' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="0"  class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="10" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="20" class='list-group-item fondo text-light ' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="30" class='list-group-item fondo text-light activo' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="40" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="50" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="60" class='list-group-item fondo text-light '> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="70" class='list-group-item fondo text-light ' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <li value="80" class='list-group-item fondo text-light  mb-2'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
-          <div class="contenedor" ><div class="ocultar">-</div></div>
+        <li value="0"  class='list-group-item fondo text-light activo  elemento-lectura' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Avance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="0"  class='list-group-item fondo text-light  elemento-lectura' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="10" class='list-group-item fondo text-light  elemento-lectura' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="20" class='list-group-item fondo text-light  elemento-lectura' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;30%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="30" class='list-group-item fondo text-light activo elemento-lectura' >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;40%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="40" class='list-group-item fondo text-light  elemento-lectura' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="50" class='list-group-item fondo text-light  elemento-lectura' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="60" class='list-group-item fondo text-light  elemento-lectura'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="70" class='list-group-item fondo text-light  elemento-lectura' > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <li value="80" class='list-group-item fondo text-light  mb-2 elemento-lectura'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></li>
+          <div class="contenedor" ><div class="ocultar ">-</div></div>
           
         </ul>
         <div class="contenedor" ><div class="ocultar mostrar">+</div></div>
       </div>
-    
-    <div class="col">
-    <?php
-        $videoId = $multimedia['url']; // Reemplaza "VIDEO_ID" por el ID del video de YouTube que deseas mostrar
 
-        echo '<iframe width="95%" height="450px" src="https://www.youtube.com/embed/' . $videoId . '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
-        ?>
 
-      <h5 class="text-center mt-1 mb-3"><?php echo $multimedia['name']; ?></h5>
-    
-    </div>
-  <div class="col-sm-2 scrollable-container text-center mb-4">
+      <div class="col elemento-lectura" id="videoContainer" data-defaultvalue="Haz clic aquí para reproducir el video">
+  <?php
+    $videoId =  $multimedia['url'];
+    echo '<iframe width="95%" height="450px" src="https://www.youtube.com/embed/' . $videoId . '?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+  ?>
+  <h5 class="text-center mt-1 mb-3 elemento-lectura"><?php echo $multimedia['name']; ?></h5>
+</div>
+
+
+  <div class="col-sm-2 scrollable-container text-center mb-4 elemento-lectura">
 <?php  
   $arreglo=array_reverse($noti);
 
@@ -112,6 +112,40 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
+var synthesis = window.speechSynthesis;
+
+// Variable para el temporizador
+var temporizador;
+if(sessionStorage.getItem('audio')=='true'){
+function reproducirTexto() {
+  var mensaje = document.getElementById("videoContainer").getAttribute("data-defaultvalue");
+  var utterance = new SpeechSynthesisUtterance(mensaje);
+  synthesis.speak(utterance);
+}
+
+// Función para iniciar el temporizador y reproducir el texto
+function iniciarTemporizador() {
+  detenerReproduccion(); // Detener la reproducción actual antes de iniciar una nueva
+
+  temporizador = setTimeout(function() {
+    reproducirTexto();
+  }, 10); // Esperar 2 segundos antes de reproducir el texto
+}
+
+// Función para detener la reproducción y limpiar el temporizador
+function detenerReproduccion() {
+  synthesis.cancel();
+  clearTimeout(temporizador);
+}
+
+// Obtén el elemento del video container
+var videoContainer = document.getElementById("videoContainer");
+
+// Asocia los eventos mouseover y mouseout al elemento del video container
+videoContainer.addEventListener("mouseover", iniciarTemporizador);
+videoContainer.addEventListener("mouseout", detenerReproduccion);
+}
+
     $('.mostrar').hide();
   $('.ocultar').click(function(){
     $('.avance-').hide();

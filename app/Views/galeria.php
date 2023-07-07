@@ -158,6 +158,7 @@ ul {
                 </div>
             </div>
         </div> 
+     
  <!--END MODAL -->
 
  <div class="gallery-container">

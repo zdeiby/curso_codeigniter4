@@ -9,9 +9,9 @@
 </head>
 <body>
 <footer class="footer " style='background:#00B0F6'>
-    <div class="container pt-4">
+    <div class="container pt-4 elemento-lectura">
         <div class="row">
-            <div class="col text-light">
+            <div class="col text-light ">
                 <h5>UBICACIÓN</h5>
                 <h6 for="">Sede Principal</h6>
                 <label for="">Av. Palacé #62 - 45, La Candelaria</label>

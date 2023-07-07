@@ -50,9 +50,9 @@
 <body>
 <div class="show"></div>
 <div class="container pb-3 text-center" style='padding-top:129px'>
-<h5 class="pt-2 pb-4">Todas nuestras noticias</h5>
+<h5 class="pt-2 pb-4 elemento-lectura">Todas nuestras noticias</h5>
 <?php foreach($noticias as $noticia) { ?>
-    <div class="row divNoticia pb-2" >
+    <div class="row divNoticia pb-2 elemento-lectura" >
         <div class='col notice <?php echo $noticia["id"]?>' data-nu='<?php echo json_encode($noticia); ?>'> 
             <img width="20%" src="<?php echo $noticia['url'] ?>" class="foto" alt="" />
             <p><b><?php echo $noticia['titulo'] ?></b></p>

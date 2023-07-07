@@ -1,0 +1,20 @@
+CRITICAL - 2023-07-07 01:37:41 --> Cannot access offset of type string on string
+in APPPATH\Views\page_multimedia_videos.php on line 84.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('page_multimedia_videos', [], true)
+ 4 APPPATH\Controllers\c_pages_multimedia.php(18): view('page_multimedia_videos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_pages_multimedia->show('dsfsdfsdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_pages_multimedia))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-07 01:38:01 --> Cannot access offset of type string on string
+in APPPATH\Views\page_multimedia_videos.php on line 84.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('page_multimedia_videos', [], true)
+ 4 APPPATH\Controllers\c_pages_multimedia.php(18): view('page_multimedia_videos', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_pages_multimedia->show('dsfsdfsdf')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_pages_multimedia))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
