@@ -14,6 +14,7 @@ class C_admin_page extends BaseController{
 
     public function adminPage(){
         $segmentos = $this->uri->getSegments();
+        $data['tof']="true";
        // $model=new m_noticias();
        // $datos['noticias']=$model->findAll();
 

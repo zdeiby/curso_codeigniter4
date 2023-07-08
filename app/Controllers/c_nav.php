@@ -10,6 +10,7 @@ class c_nav extends BaseController{
     {
         helper(['url','form']);
         $this->uri = service('uri');
+       
     }
 
     public function nav(){
@@ -19,7 +20,7 @@ class c_nav extends BaseController{
 }
     public function navE(){
         $menu1= $this->request->getVar('menu');
-    
+        
         
         $data=[
             "menu"=>$menu1,

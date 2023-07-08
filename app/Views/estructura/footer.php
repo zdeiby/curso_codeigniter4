@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+   
 <footer class="footer " style='background:#00B0F6'>
     <div class="container pt-4 elemento-lectura">
         <div class="row">
@@ -17,6 +18,7 @@
                 <label for="">Av. Palacé #62 - 45, La Candelaria</label>
 
                  <h5 class="pt-4">UBICACION</h5>
+                
                 <div class="p-3">
                    
                    <a href="https://www.google.com/maps/place/Unidad+Familia+Medell%C3%ADn/@6.2593029,-75.5647152,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4428eff0815781:0xf53b5e95d5609dfc!8m2!3d6.2592976!4d-75.5621403!16s%2Fg%2F11cnbmzprz?entry=ttu"> <img width="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1200px-Google_Maps_icon_%282020%29.svg.png" alt=""></a>

@@ -1,3 +1,5 @@
+<?php $tof='tru'; ?>  <!-- true or false -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,10 +47,10 @@
         <thead></thead>
         <tbody>
             <tr>
-                <td class="elemento-lectura">Aranjuez - Carrera 50ª No. 93 - 39</td>
+                <td class="elemento-lectura">Aranjuez - Carrera 50ª No. 93 - 39</td><?php echo($tof==="true")?'<td>x</td>':'' ?>
             </tr>
             <tr>
-                <td class="elemento-lectura">castilla - Carrera 50ª No. 93 - 39</td>
+                <td class="elemento-lectura">castilla - Carrera 50ª No. 93 - 39</td><?php echo($tof==="true")?'<td>x</td>':'' ?>
             </tr>
         </tbody>
     </table>

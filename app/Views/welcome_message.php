@@ -1,3 +1,5 @@
+<?php $tof='tru'; ?>  <!-- true or false -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,11 +186,11 @@
 
 
 <div class="container pt-4 text-center pb-4">
-  <h3 class="pb-4  elemento-lectura" style="color:#00B0F6" contenteditable="false">¿Quiénes somos?</h3>
+  <h3 class="pb-4  elemento-lectura" style="color:#00B0F6" contenteditable="<?php echo $tof ?>">¿Quiénes somos?</h3>
   <div class="row">
     <div class="col-md-6">
       <div class="container pt-4 elemento-lectura">
-        <p contenteditable="false">
+        <p contenteditable="<?php echo $tof ?>">
           Somos una Unidad que pertenece a la <b style="color:#00B0F6" >Secretaría de Inclusión Social, Familia y Derechos Humanos de la Alcaldía de Medellín</b>. Buscamos mejorar la calidad de vida de las familias de Medellín y fortalecerlas como grupo fundamental de formación de seres humanos. Además, impulsamos la corresponsabilidad y la participación activa de la familia en la gestión de su propio desarrollo. Nuestro trabajo está direccionado por la Política Pública para la Familia de Medellín aprobada por el acuerdo 054 de 2011 del Concejo de Medellín.
         </p>
       </div>
@@ -227,7 +229,14 @@
     </div>
   </div>
 </div>
-
+<div class="col text-center pb-3">
+    <?php if( $tof==='true') { 
+      echo '<form>
+      <button class="btn btn-primary" style="background:#00B0F6 !important">Guardar</button>
+            </form>';
+    }
+    ?>
+    </div>
 
        <!-- <img width="80%"src="https://cdnwordpresstest-f0ekdgevcngegudb.z01.azurefd.net/es/wp-content/uploads/2022/09/unidad-familia-4.jpg" alt=""> -->
     </div>
