@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -112,20 +111,22 @@
             </div>
         </div>
     </div>
-    <form action="" method="">
+  
     <div class="row text-center pt-4 pb-4">
-        <label for="" contenteditable='<?php echo $tof; ?>'>Agrega un titulo</label>
+        <label for="" contenteditable='<?php echo $tof; ?>' id="titulonew"> <?php echo $home[5]['titulo']?> </label>
     </div>
     <div class="row text-center pb-4">
-        <label for="" contenteditable='<?php echo $tof; ?>'>Agrega un texto</label>
+        <label for="" contenteditable='<?php echo $tof; ?>' id="textonew"> <?php echo $home[5]['texto']?> </label>
     </div>
     <div class="col text-center pb-3">
     <?php if( $tof==='true') { 
-      echo '<button class="btn btn-primary" style="background:#00B0F6 !important">Guardar</button>';
+      echo '<form>
+      <button class="btn btn-primary actualizarnew"  style="background:#00B0F6 !important">Guardar</button>
+      </form>';
     }
     ?>
     </div>
-      </form>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -154,6 +155,25 @@
               }
           });
     });
+    $('.actualizarnew').click(function(){
+       let titulonew= $('#titulonew').text();
+       let textonew= $('#textonew').text();
+       
+       
+       $.ajax({
+        url:"adminedit",
+        method: "POST",
+        data: {
+            titulonew:titulonew,
+            textonew:textonew
+        },
+        success:function(response){
+          console.log(response)
+         
+        }
+      })
+
+      })
 
 
 

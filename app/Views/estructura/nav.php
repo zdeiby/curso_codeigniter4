@@ -345,19 +345,16 @@ if(sessionStorage.getItem('sm7') !==null  ){
    }
    //---------------------------------------------------------------------------------------------
 
-
-
-
-
-
     $('.delete').hide();  //borrar oculto
     $('.add').hide();
     
     $('.borrar').click(function(){
+      $('.add').hide();
+      $('.inputs').hide();
       $('.collapse').append(`
                  <form class="inputs" method="">  
                  <label >&nbsp;</label>
-                 <button type="submit" class="btn btn-primary custom-button bton">Ver menú</button>     
+                 <button type="submit" class="btn btn-primary custom-button bton2">Ver menú</button>     
                  </form>`);
       $('.delete').addClass('changeColor');
      $('.delete').show(); 
@@ -413,12 +410,14 @@ if(sessionStorage.getItem('audio')=='true' ){
     $('.btn-editar').click(function(){
       var nombre = '<?php echo $tof; ?>';
       $('.delete').hide();
+      $('.bton2').hide();
         datos=!datos;
         
         let enviar=datos.toString();
         console.log(enviar);
-        if(enviar === 'true'){
+        if(enviar === 'true' && $('#m5').text() == '' ){
                 $('.navbar-nav').attr('contenteditable',enviar);
+               
                  $('.collapse').append(`
                  <form class="inputs" method="">  
                  <label >&nbsp;</label>
@@ -431,6 +430,12 @@ if(sessionStorage.getItem('audio')=='true' ){
                  <button type="submit" class="btn btn-primary custom-button bton">Guardar</button> 
                  </div>     
                  </div>      
+                 </form>`);
+          }else{
+            $('.navbar-nav').attr('contenteditable',enviar);
+            $('.collapse').append(`
+                 <form class="inputs" method="">  
+                 <button type="submit" class="btn btn-primary custom-button bton">Guardar</button>      
                  </form>`);
           }
 
@@ -461,6 +466,7 @@ if(sessionStorage.getItem('audio')=='true' ){
                   }
               });
               $('.bton').hide();
+            
              let m5= $('#m5').text(menu);
               $('.li1').text(menu);
               $('.showadd').show();
@@ -470,6 +476,7 @@ if(sessionStorage.getItem('audio')=='true' ){
 
           if(enviar ==='false'){
             $('.bton').hide();
+            $('#menu').hide();
           }
 
 
@@ -485,46 +492,3 @@ if(sessionStorage.getItem('audio')=='true' ){
 
 </body>
 </html>
- <!--   
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Síntesis de voz en JavaScript</title>
-</head>
-<body>
-    <div>
-        <textarea id="text-input" placeholder="Escribe el texto que deseas convertir en voz"></textarea>
-        <button id="speak-btn">Reproducir</button>
-    </div>
-
-    <script>
-        // Obtener referencia a los elementos HTML
-        var textInput = document.getElementById('text-input');
-        var speakBtn = document.getElementById('speak-btn');
-
-        // Agregar evento de clic al botón de reproducir
-        speakBtn.addEventListener('click', function () {
-            // Verificar la compatibilidad del navegador con la síntesis de voz
-            if ('speechSynthesis' in window) {
-                // Obtener las voces disponibles
-                var voices = speechSynthesis.getVoices();
-
-                // Crear un objeto SpeechSynthesisUtterance para convertir texto en voz
-                var utterance = new SpeechSynthesisUtterance();
-
-                // Establecer el texto a convertir en voz
-                utterance.text = textInput.value;
-
-                // Establecer la voz que se utilizará (opcional)
-                utterance.voice = voices[0]; // Puedes ajustar el índice según las voces disponibles en tu navegador
-
-                // Reproducir el texto en voz
-                speechSynthesis.speak(utterance);
-            }
-        });
-    </script>
-</body>
-</html>
-
-      -->

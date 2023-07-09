@@ -31,7 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('contactenos','c_contactenos::contactar');
-$routes->get('ufm','c_ufm::ufmedellin');
+$routes->get('ufm','C_ufm::ufmedellin');
 $routes->get('login','c_loginadm::login');
 $routes->get('noticias','c_noticias::notice');
 $routes->get('galeria','c_galeria::galerie');
@@ -51,6 +51,11 @@ $routes->get('nuevapagina','C_admin_page::adminPage');
 $routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo'); // para recibir la peticion del ajax en C_noticias
 $routes->post('mi-controlador/aprobar', 'c_nav::navE'); // para recibir la peticion del ajax en NAV para contenido editable
 $routes->post('add-img','C_guardarImg::guardarImg2');
+$routes->post('editar','Home::fc_textos');
+$routes->post('ufmedit','C_ufm::ufm');
+$routes->post('adminedit','C_admin_page::fc_admin');
+$routes->post('contactenosdelete','c_contactenos::cDelete');
+
 
 $routes->get('noticias/(:any)', 'c_pages_controller::show/$1'); // pagina dinamica
 

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\userModel;
+use App\Models\M_textos;
 
 class Home extends BaseController
 {   
@@ -19,8 +20,23 @@ class Home extends BaseController
     {   
         
       $segmentos = $this->uri->getSegments();
-      $data['url']=$segmentos;
-      
-      return view('estructura/nav').view('welcome_message'). view('estructura/footer');
+    
+      $model=new M_textos();
+      $home=$model->findAll();
+      $datosView=["tof"=>"true",
+                  "home"=>$home  ];
+
+    
+      return view('estructura/nav').view('welcome_message',$datosView). view('estructura/footer');
+    }
+    public function fc_textos(){
+      $titulo = $this->request->getVar('titulo');
+      $texto = $this->request->getVar('texto');
+      $data=['id'=>1,
+            'titulo'=>$titulo,
+            'texto'=>$texto];
+      $model=new M_textos();
+      $model->save($data);
+      echo $titulo.$texto;
     }
 }

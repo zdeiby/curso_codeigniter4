@@ -1,7 +1,7 @@
 <?php 
 
 namespace App\Controllers;
-use App\Models\m_noticias;
+use App\Models\M_textos;
 
 class C_admin_page extends BaseController{
     protected $helpers = ['url'];
@@ -14,12 +14,22 @@ class C_admin_page extends BaseController{
 
     public function adminPage(){
         $segmentos = $this->uri->getSegments();
-        $data['tof']="true";
-       // $model=new m_noticias();
-       // $datos['noticias']=$model->findAll();
-
-        $data['url']=$segmentos[0];
-        return view('estructura/nav',$data).view('admin-page').view('estructura/footer');
+        $model=new M_textos();
+        $home=$model->findAll();
+        $datosView=["tof"=>"true",
+                    "home"=>$home  ];
+        return view('estructura/nav', $datosView).view('admin-page').view('estructura/footer');
 }
+public function fc_admin(){
+    $titulonew = $this->request->getVar('titulonew');
+    $textonew = $this->request->getVar('textonew');
+    $datanew=['id'=>6,
+          'titulo'=>$titulonew,
+          'texto'=>$textonew];
+    $model=new M_textos();
+    $model->save($datanew);
+    echo $titulonew.$textonew;
+    
+  }
     }
     
