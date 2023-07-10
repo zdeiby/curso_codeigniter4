@@ -8,7 +8,7 @@ class c_addVideo extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {    $this->session = \Config\Services::session();
         helper('url');
         $this->uri = service('uri');
     }
@@ -31,10 +31,10 @@ class c_addVideo extends BaseController{
         }
      //  var_dump($datos);
 
-
+     $datosNav['datosNav']=$this->session->get();
         $segmentos = $this->uri->getSegments();
         $data['url']=$segmentos[0];
-        return view('estructura/nav',$datos).view('agg_videos').view('estructura/footer');
+        return view('estructura/nav',$datosNav).view('agg_videos',$datos).view('estructura/footer');
 }
     }
     

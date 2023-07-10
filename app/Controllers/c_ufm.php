@@ -5,7 +5,7 @@ use App\Models\M_textos;
 
 class C_ufm extends BaseController{
     protected $helpers = ['url'];
-
+    protected $session;
     public function __construct()
     {
         helper('url');
@@ -13,12 +13,15 @@ class C_ufm extends BaseController{
     }
 
     public function ufmedellin(){
+        $this->session = \Config\Services::session();
+        $datos=$this->session->get();
         $segmentos = $this->uri->getSegments();
         $model=new M_textos();
         $home=$model->findAll();
         $datosView=["tof"=>"true",
-                    "home"=>$home  ];
-  
+                    "home"=>$home,
+                "datosNav"=>$datos];
+       
         return view('estructura/nav', $datosView).view('ufm').view('estructura/footer');
 }
 public function ufm(){

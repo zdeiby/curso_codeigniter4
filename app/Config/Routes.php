@@ -40,7 +40,7 @@ $routes->get('mas-noticias','c_mas_noticias::masNoticias');
 $routes->get('agg-noticia','c_agg_noticia::aggNoticia');
 $routes->get('videos-agg','c_addVideo::aggVideos');
 $routes->get('editar-inicio','c_editar_inicio::editar');
-$routes->get('add-nav','c_add_nav::editarNav');
+$routes->get('config','C_config::editarNav');
 $routes->get('nav','c_nav::nav');
 $routes->get('add','C_guardarImg::guardarImg');
 $routes->get('nuevapagina','C_admin_page::adminPage');
@@ -50,12 +50,13 @@ $routes->get('nuevapagina','C_admin_page::adminPage');
 
 $routes->post('mi-controlador/mi-metodo', 'c_mas_noticias::miMetodo'); // para recibir la peticion del ajax en C_noticias
 $routes->post('mi-controlador/aprobar', 'c_nav::navE'); // para recibir la peticion del ajax en NAV para contenido editable
-$routes->post('add-img','C_guardarImg::guardarImg2');
-$routes->post('editar','Home::fc_textos');
-$routes->post('ufmedit','C_ufm::ufm');
-$routes->post('adminedit','C_admin_page::fc_admin');
-$routes->post('contactenosdelete','c_contactenos::cDelete');
-
+$routes->post('add-img','C_guardarImg::guardarImg2'); //guardar imagenes
+$routes->post('editar','Home::fc_textos');  //editar texto index
+$routes->post('ufmedit','C_ufm::ufm');  //editar textos UFM
+$routes->post('adminedit','C_admin_page::fc_admin');   //editar textos nueva pagina
+$routes->post('contactenosdelete','c_contactenos::cDelete');  //borrar direcciones en contactenos
+$routes->post('sendinfo','c_loginadm::info'); //datos de login a controlador
+$routes->post('destroy','c_nav::destroySession');
 
 $routes->get('noticias/(:any)', 'c_pages_controller::show/$1'); // pagina dinamica
 

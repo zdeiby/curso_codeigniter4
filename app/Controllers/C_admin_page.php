@@ -7,7 +7,7 @@ class C_admin_page extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {   $this->session = \Config\Services::session();
         helper('url');
         $this->uri = service('uri');
     }
@@ -17,7 +17,8 @@ class C_admin_page extends BaseController{
         $model=new M_textos();
         $home=$model->findAll();
         $datosView=["tof"=>"true",
-                    "home"=>$home  ];
+                    "home"=>$home,
+                    "datosNav"=> $this->session->get()  ];
         return view('estructura/nav', $datosView).view('admin-page').view('estructura/footer');
 }
 public function fc_admin(){

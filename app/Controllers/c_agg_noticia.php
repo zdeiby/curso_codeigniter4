@@ -8,7 +8,7 @@ class c_agg_noticia extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {    $this->session = \Config\Services::session();
         helper('url');
         $this->uri = service('uri');
     }
@@ -33,10 +33,10 @@ class c_agg_noticia extends BaseController{
         }
        
 
-
+        $datosNav['datosNav']=$this->session->get();
         $segmentos = $this->uri->getSegments();
         $data['url']=$segmentos[0];
-        return view('estructura/nav',$datos).view('agg_noticia').view('estructura/footer');
+        return view('estructura/nav',$datosNav).view('agg_noticia',$datos).view('estructura/footer');
 }
     }
     

@@ -9,7 +9,7 @@ class c_mas_noticias extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {    $this->session = \Config\Services::session();
         helper(['url','form']);
         $this->uri = service('uri');
     }
@@ -19,7 +19,7 @@ class c_mas_noticias extends BaseController{
       
         $segmentos = $this->uri->getSegments();
         $model=new m_noticias();
-
+        $datosNav['datosNav']=$this->session->get();
         $titulo = $this->request->getVar('titulo');
         $url = $this->request->getVar('url');
         $texto = $this->request->getVar('texto');
@@ -36,7 +36,7 @@ class c_mas_noticias extends BaseController{
         
         $datos['noticias']=$model->findAll();
         $data['url']=$segmentos[0];
-        return view('estructura/nav').view('mas_noticias',$datos).view('estructura/footer');
+        return view('estructura/nav',$datosNav).view('mas_noticias',$datos).view('estructura/footer');
 }
 public function miMetodo()
 {

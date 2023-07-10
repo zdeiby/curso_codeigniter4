@@ -5,9 +5,10 @@ namespace App\Controllers;
 
 class c_nav extends BaseController{
     protected $helpers = ['url'];
+    protected $session;
 
     public function __construct()
-    {
+    {   $this->session = \Config\Services::session();
         helper(['url','form']);
         $this->uri = service('uri');
        
@@ -16,6 +17,7 @@ class c_nav extends BaseController{
     public function nav(){
         $segmentos = $this->uri->getSegments();
         $data['url']=$segmentos[0]; 
+       // $datos=$this->session->get();
         return view('estructura/nav');
 }
     public function navE(){
@@ -27,6 +29,11 @@ class c_nav extends BaseController{
            
         ];
       //   return print_r($data);
+    }
+
+    public function destroySession(){
+        $confirm= $this->request->getVar('session');
+        $this->session->destroy();
     }
     }
     

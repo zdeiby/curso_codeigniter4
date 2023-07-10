@@ -6,12 +6,13 @@ use App\Models\M_textos;
 
 class Home extends BaseController
 {   
+    protected $session;
     public $modelHome;
     public $form;
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {    $this->session = \Config\Services::session();
         helper('url');
         $this->uri = service('uri');
     }
@@ -20,14 +21,16 @@ class Home extends BaseController
     {   
         
       $segmentos = $this->uri->getSegments();
-    
+      $datos['datosNav']=$this->session->get();
       $model=new M_textos();
       $home=$model->findAll();
-      $datosView=["tof"=>"true",
+      $datosView=[
+                  "tof"=>"true",
                   "home"=>$home  ];
 
+
     
-      return view('estructura/nav').view('welcome_message',$datosView). view('estructura/footer');
+      return view('estructura/nav',$datos).view('welcome_message',$datosView). view('estructura/footer');
     }
     public function fc_textos(){
       $titulo = $this->request->getVar('titulo');

@@ -7,7 +7,7 @@ class c_noticias extends BaseController{
     protected $helpers = ['url'];
 
     public function __construct()
-    {
+    {    $this->session = \Config\Services::session();
         helper('url');
         $this->uri = service('uri');
     }
@@ -16,9 +16,10 @@ class c_noticias extends BaseController{
         $segmentos = $this->uri->getSegments();
         $model=new m_noticias();
         $datos['noticias']=$model->findAll();
+        $datosNav['datosNav']=$this->session->get();
 
         $data['url']=$segmentos[0];
-        return view('estructura/nav',$data).view('noticias',$datos).view('estructura/footer');
+        return view('estructura/nav',$datosNav).view('noticias',$datos).view('estructura/footer');
 }
     }
     

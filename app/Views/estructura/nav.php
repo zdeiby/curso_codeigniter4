@@ -1,3 +1,11 @@
+<?php 
+$nombre=' ';
+try{
+  $nombre=$datosNav['nombre'];
+}catch (Exception){
+
+}
+?>
 
 <?php $tof='tru'; ?>  <!-- true or false -->
 
@@ -123,6 +131,14 @@
 #speak-btn:hover{
  background: #00B0F6 !important;
 }
+.profile{
+  width: 30px;
+  border-radius:50%;
+}
+.nombre{
+  
+  font-size:17px;
+}
   </style>
     <title>Document</title>
 </head>
@@ -195,12 +211,31 @@
                     </li>
             
                 </ul>
+               
             </div>
-            <div class="">
-                <div class="elemento-lectura">
-                    <a href="../../../ufm/index.php/login"><button type="button" class="btn btn-primary custom-button ">Login UFM</button></a>
-                </div>
-            </div>
+ <?php echo ( $nombre == ' ' ) ? '<a href="../../../ufm/index.php/login"><button type="button" class="btn btn-primary custom-button ">Login UFM</button></a>'
+                   :
+                   '<ul class="navbar-nav tamano">
+                    <li class="nav-item dropdown" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">  
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label class="nombre">' .$nombre. ' </label>&nbsp;&nbsp;<img class="profile" src="https://avatars.githubusercontent.com/u/111442309?v=4" >
+                      </a>
+                        <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item liT" href="../../../ufm/index.php/config">Configuración</a></li>
+                            <li><a class="dropdown-item liT " id="cerrarSeccion">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>' ?>
+         
+               
+     
+
+
+
+
+          
+                  
+            
         </div>
     </nav>
 </div>
@@ -484,7 +519,21 @@ if(sessionStorage.getItem('audio')=='true' ){
     })
     
 
- 
+ //Cerrar session
+
+ $('#cerrarSeccion').click(function(){
+let session="true";
+    $.ajax({
+
+      method: "POST",
+      url: "../../../ufm/index.php/destroy",
+      data: {session:session},
+      success: function (response) {
+        location.reload();
+        console.log(response);
+      }
+    });
+ })
 
 </script>
 
