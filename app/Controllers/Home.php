@@ -3,6 +3,7 @@
 namespace App\Controllers;
 use App\Models\userModel;
 use App\Models\M_textos;
+use App\Models\M_menu;
 
 class Home extends BaseController
 {   
@@ -21,12 +22,17 @@ class Home extends BaseController
     {   
         
       $segmentos = $this->uri->getSegments();
-      $datos['datosNav']=$this->session->get();
+      $modelNav=new M_menu();
+      $send=$modelNav->findAll();
+      $datos=['datosNav'=>$this->session->get(),
+                          "nav"=>$send ];
       $model=new M_textos();
+      
       $home=$model->findAll();
       $datosView=[
                   "tof"=>"true",
-                  "home"=>$home  ];
+                  "home"=>$home
+                 ];
 
 
     

@@ -159,50 +159,50 @@ try{
                 <li class="nav-item dropdown inicio d1"  onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                        <b class="delete ">x</b>
                 <label class="nav-link dropdown " dato="m1"  id="navbarDropdown"  role="button" data-bs="dropdown" aria-expanded="false" contenteditable="<?php echo $tof ?>">
-                          <label id="m1"  class="elemento-lectura">Inicio</label>
+                          <label id="m1"  class="elemento-lectura"><?php echo $nav[0]['nombre'] ?></label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li class="sd1"><b  class="delete b" >x</b><a dato="sm1" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd1"><b  class="delete b" >x</b><a id="sm1" dato="sm1" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[5]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                            <!-- <li class="sd2"><b  class="delete b" >x</b><a dato="sm2" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/editar-inicio"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modificar inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
                           </ul>
                     </li>
                     <li class="nav-item dropdown  d2" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                     <b class="delete ">x</b> <label class="nav-link dropdown "  dato="m2"  id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false" contenteditable="<?php echo $tof ?>">
-                    <label id="m2" class="elemento-lectura" > ¿Quienes somos?</label>
+                    <label id="m2" class="elemento-lectura" ><?php echo $nav[1]['nombre'] ?></label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li class="sd3"><b  class="delete b" >x</b><a dato="sm3" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/contactenos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactenos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li class="sd4"><b  class="delete b" >x</b><a dato="sm4" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/ufm"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad Familia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd3"><b  class="delete b" >x</b><a dato="sm3" id="sm3" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/contactenos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[7]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd4"><b  class="delete b" >x</b><a dato="sm4" id="sm4"class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/ufm"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[8]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown d3" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                          <b class="delete text-center">x</b> <label class="nav-link dropdown "   dato="m3" id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false"contenteditable="<?php echo $tof ?>">
-                         <label id="m3" class="elemento-lectura">  Noticias</label>
+                         <label id="m3" class="elemento-lectura">  <?php echo $nav[2]['nombre'] ?></label>
               </label>
                         <ul class="dropdown-menu submenu div1" aria-labelledby="navbarDropdown">
-                            <li class="sd5"><b  class="delete b" >x</b><a dato="sm5" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/noticias"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Noticias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li class="sd6"><b  class="delete b" >x</b><a dato="sm6" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/agg-noticia"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Noticia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd5"><b  class="delete b" >x</b><a dato="sm5" id="sm5" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/noticias"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[9]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd6"><b  class="delete b" >x</b><a dato="sm6" id="sm6" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/agg-noticia"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[10]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown  d4" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)">
                     <b class="delete ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x</b> <label class="nav-link dropdown "  dato="m4"  id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false"contenteditable="<?php echo $tof ?>">
-                    <label id="m4" class="elemento-lectura">  Multimedia</label>
+                    <label id="m4" class="elemento-lectura"><?php echo $nav[3]['nombre'] ?></label>
               </label>
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li class="sd7"><b  class="delete b" >x</b><a dato="sm7" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                            <li class="sd8"><b  class="delete b" >x</b><a dato="sm8" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd7"><b  class="delete b" >x</b><a dato="sm7" id="sm7" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/galeria"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[11]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class="sd8"><b  class="delete b" >x</b><a dato="sm8" id="sm8" class="dropdown-item liT elemento-lectura " href="../../../ufm/index.php/galeria-videos"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[12]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                        <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
-                            <li class=" sd9"><b  class="delete b" >x</b><a dato="sm9"  class="dropdown-item liT elemento-lectura a" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Videos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li class=" sd9"><b  class="delete b" >x</b><a dato="sm9" id="sm9" class="dropdown-item liT elemento-lectura a" href="../../../ufm/index.php/videos-agg"contenteditable="<?php echo $tof ?>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[13]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                           </ul>
                     </li>
         
                     <li class="nav-item dropdown showadd d5" onmouseover="showSubMenu(this)" onmouseleave="hideSubMenu(this)" contenteditable="false">
                     <b class="delete ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x</b> <label class="nav-link dropdown "  dato="m5"  id="navbarDropdown" role="button" data-bs="dropdown" aria-expanded="false">
-                    <label id="m5" class="elemento-lectura"></label>
+                    <label id="m5" class="elemento-lectura"><?php echo $nav[4]['nombre'] ?></label>
               </label>
                  
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item liT elemento-lectura li1" href="../../../ufm/index.php/nuevapagina">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a class="dropdown-item liT elemento-lectura li1" id="sm10" href="../../../ufm/index.php/nuevapagina">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $nav[14]['nombre'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
                          <!--   <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li2" href="../../../ufm/index.php/galeria-videos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
                        <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Agregar Fotos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b  class="delete " >x</b></a></li> -->
                          <!--   <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a lit elemento-lectura3" href="../../../ufm/index.php/videos-agg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;editar apartado&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> -->
@@ -262,7 +262,7 @@ try{
 <div>
     <span id="selected-text" value="hola">holaa</span>
     <button id="speak-btn" style="padding: 0; border: none; background: none;">
-    <img src="https://cdn.icon-icons.com/icons2/1132/PNG/512/1486348532-music-play-pause-control-go-arrow_80458.png" alt="" style="width: 100%; height: auto;">
+    <img src="<?php echo base_url('uploads/triangulo.png'); ?>" alt="" style="width: 20%; height: auto;">
     </button>
 
 </div>
@@ -476,22 +476,51 @@ if(sessionStorage.getItem('audio')=='true' ){
 
           $('.bton').click(function(e){
             let menu = $('#menu').val();
+            let menuText=$('#menu').text();
             sessionStorage.setItem('menu',menu);
             let m1= $('#m1').text();
             let m2= $('#m2').text();
             let m3= $('#m3').text();
             let m4= $('#m4').text();
+            let m52=$('#m5').text();
+
+            let sm1= $('#sm1').text();
+           // let sm2= $('#sm2').text();
+            let sm3= $('#sm3').text();
+            let sm4= $('#sm4').text();
+            let sm5= $('#sm5').text();
+            let sm6= $('#sm6').text();
+            let sm7= $('#sm7').text();
+            let sm8= $('#sm8').text();
+            let sm9= $('#sm9').text();
+            let sm10= $('#sm10').text();
+
+            let navCompleto={
+              m1:m1,
+              m2:m2,
+              m3:m3,
+              m4:m4,
+              menuText:menuText,
+              m52:m52,
+              sm1:sm1,
+             // sm2:sm2,
+              sm3:sm3,
+              sm4:sm4,
+              sm5:sm5,
+              sm6:sm6,
+              sm7:sm7,
+              sm8:sm8,
+              sm9:sm9,
+             sm10:sm10,
+              menu:menu
+            }
            
-            console.log(m1,m2,m3,m4,menu);
+           console.log(menuText,menu);
             e.preventDefault();
               $.ajax({
-                  url: "mi-controlador/aprobar",
+                  url: "../../../../../ufm/index.php/mi-controlador/aprobar",
                   method: "POST",
-                  data: { 
-                    menu:menu,
-                 
-                 
-                   },
+                  data: {navCompleto:navCompleto},
                   success: function(response) {
                   console.log(response)
                   },

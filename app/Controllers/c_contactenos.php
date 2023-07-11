@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\M_puntosAtencion;
+use App\Models\M_menu;
 
 
 class c_contactenos extends BaseController{
@@ -15,7 +16,7 @@ class c_contactenos extends BaseController{
 
     public function contactar(){ 
         $datos=new M_puntosAtencion();
-        $datosNav=$this->session->get();
+       
         $segmentos = $this->uri->getSegments();
         $barrio = $this->request->getVar('barrio');
         $direccion = $this->request->getVar('direccion');
@@ -28,8 +29,11 @@ class c_contactenos extends BaseController{
         $datos->insert($dir);
        
        }  
+       $modelNav=new M_menu();
+       $send=$modelNav->findAll();
         $data=["tof"=>'true',
-                "datosNav"=>$datosNav];
+                "datosNav"=>$this->session->get(),
+                "nav"=>$send ];
 
         return view('estructura/nav',  $data).view('contactenos',$mostrar).view('estructura/footer');
 }

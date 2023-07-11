@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\M_textos;
+use App\Models\M_menu;
 
 class C_admin_page extends BaseController{
     protected $helpers = ['url'];
@@ -16,7 +17,10 @@ class C_admin_page extends BaseController{
         $segmentos = $this->uri->getSegments();
         $model=new M_textos();
         $home=$model->findAll();
+        $modelNav=new M_menu();
+        $send=$modelNav->findAll();
         $datosView=["tof"=>"true",
+                    "nav"=>$send,
                     "home"=>$home,
                     "datosNav"=> $this->session->get()  ];
         return view('estructura/nav', $datosView).view('admin-page').view('estructura/footer');

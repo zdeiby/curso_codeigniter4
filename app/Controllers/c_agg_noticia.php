@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\m_noticias;
+use App\Models\M_menu;
 
 
 class c_agg_noticia extends BaseController{
@@ -32,8 +33,10 @@ class c_agg_noticia extends BaseController{
             $model->insert($datos); 
         }
        
-
-        $datosNav['datosNav']=$this->session->get();
+        $modelNav=new M_menu();
+        $send=$modelNav->findAll();
+        $datosNav=['datosNav'=>$this->session->get(),
+        "nav"=>$send ];
         $segmentos = $this->uri->getSegments();
         $data['url']=$segmentos[0];
         return view('estructura/nav',$datosNav).view('agg_noticia',$datos).view('estructura/footer');

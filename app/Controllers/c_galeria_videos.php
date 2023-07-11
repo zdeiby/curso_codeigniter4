@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\m_multimedia;
-
+use App\Models\M_menu;
 
 class c_galeria_videos extends BaseController{
  
@@ -16,7 +16,10 @@ class c_galeria_videos extends BaseController{
 
     public function galeria_videos(){
         $segmentos = $this->uri->getSegments();
-        $datosNav['datosNav']=$this->session->get();
+        $modelNav=new M_menu();
+        $send=$modelNav->findAll();
+        $datosNav=['datosNav'=>$this->session->get(),
+                            "nav"=>$send ];
         $data['url']=$segmentos[0];
         $model = new m_multimedia();
         $datos['multimedia'] = $model->findAll();

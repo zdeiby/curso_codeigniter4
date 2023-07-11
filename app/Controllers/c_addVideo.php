@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\m_multimedia;
+use App\Models\M_menu;
 
 
 class c_addVideo extends BaseController{
@@ -31,9 +32,11 @@ class c_addVideo extends BaseController{
         }
      //  var_dump($datos);
 
-     $datosNav['datosNav']=$this->session->get();
-        $segmentos = $this->uri->getSegments();
-        $data['url']=$segmentos[0];
+     $modelNav=new M_menu();
+     $send=$modelNav->findAll();
+     $datosNav=['datosNav'=>$this->session->get(),
+                         "nav"=>$send ];
+
         return view('estructura/nav',$datosNav).view('agg_videos',$datos).view('estructura/footer');
 }
     }

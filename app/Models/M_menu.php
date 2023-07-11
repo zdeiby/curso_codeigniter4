@@ -13,14 +13,14 @@ class M_menu extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-   // protected $allowedFields = ['barrio', 'direccion'];
+    protected $allowedFields = ['codigo', 'nombre','deleted'];
 
     // Dates
     protected $useTimestamps = false;
    // protected $dateFormat    = 'datetime';
   //  protected $createdField  = 'created_at';
    // protected $updatedField  = 'updated_at';
-   // protected $deletedField  = 'deleted_at';
+   // protected $deletedField  = 'deleted';
 
     // Validation
     protected $validationRules      = [];

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\m_noticias;
+use App\Models\M_menu;
 
 
 
@@ -19,7 +20,10 @@ class c_mas_noticias extends BaseController{
       
         $segmentos = $this->uri->getSegments();
         $model=new m_noticias();
-        $datosNav['datosNav']=$this->session->get();
+        $modelNav=new M_menu();
+        $send=$modelNav->findAll();
+        $datosNav=['datosNav'=>$this->session->get(),
+                            "nav"=>$send ];
         $titulo = $this->request->getVar('titulo');
         $url = $this->request->getVar('url');
         $texto = $this->request->getVar('texto');

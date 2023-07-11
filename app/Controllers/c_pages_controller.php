@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 use App\Models\m_noticias;
+use App\Models\M_menu;
 
 class c_pages_controller extends BaseController
 {
@@ -15,7 +16,10 @@ class c_pages_controller extends BaseController
         $model=new m_noticias();
         $noticias=$model->findAll();
         $datosValidar=$model->findAll();
-        $datosNav['datosNav']=$this->session->get();
+        $modelNav=new M_menu();
+     $send=$modelNav->findAll();
+     $datosNav=['datosNav'=>$this->session->get(),
+                         "nav"=>$send ];
        foreach($datosValidar as $datos){
         if($datos['slug']==$slug){
             $data=[

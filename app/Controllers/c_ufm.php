@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 use App\Models\M_textos;
+use App\Models\M_menu;
 
 class C_ufm extends BaseController{
     protected $helpers = ['url'];
@@ -18,9 +19,12 @@ class C_ufm extends BaseController{
         $segmentos = $this->uri->getSegments();
         $model=new M_textos();
         $home=$model->findAll();
+        $modelNav=new M_menu();
+        $send=$modelNav->findAll();
         $datosView=["tof"=>"true",
                     "home"=>$home,
-                "datosNav"=>$datos];
+                "datosNav"=>$datos,
+                "nav"=>$send];
        
         return view('estructura/nav', $datosView).view('ufm').view('estructura/footer');
 }
