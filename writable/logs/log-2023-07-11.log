@@ -652,3 +652,286 @@ in APPPATH\Controllers\c_nav.php on line 71.
  4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 INFO - 2023-07-11 20:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:40:37 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 71.
+ 1 APPPATH\Controllers\c_nav.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:42:56 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 71.
+ 1 APPPATH\Controllers\c_nav.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:43:26 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 71.
+ 1 APPPATH\Controllers\c_nav.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:44:48 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:45:16 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:45:31 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:45:38 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:49:12 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:49:42 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:50:20 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:50:34 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:50:37 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:51:48 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:55:32 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:55:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:55:50 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:56:46 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:57:22 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:57:57 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:58:18 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 20:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 20:59:16 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 20:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:02:20 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:05:16 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:28:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:28:18 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:31:00 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:31:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:31:38 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:32:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:32:48 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:33:06 --> Undefined array key "menu"
+in APPPATH\Controllers\c_nav.php on line 32.
+ 1 APPPATH\Controllers\c_nav.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "menu"', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:33:20 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 65.
+ 1 APPPATH\Controllers\c_nav.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:33:38 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 65.
+ 1 APPPATH\Controllers\c_nav.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-11 21:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-11 21:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-11 21:34:35 --> Undefined variable $newM5
+in APPPATH\Controllers\c_nav.php on line 84.
+ 1 APPPATH\Controllers\c_nav.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newM5', 'C:\\xampp\\htdocs\\ufm\\app\\Controllers\\c_nav.php', 84)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\c_nav->navE()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\c_nav))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

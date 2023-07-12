@@ -29,7 +29,7 @@ class c_nav extends BaseController{
         $m4=$menu1['m4'];
         $m5=$menu1['m52']; //menu
 
-        $menu=$menu1['menu']; //agregar valor
+    //    $menu=$menu1['menu']; //agregar valor
 
         $sm1=$menu1['sm1'];
        //$sm2=$menu1['sm2'];
@@ -47,7 +47,7 @@ class c_nav extends BaseController{
         $modelNav->save(['id'=>7,'nombre'=>$menu]);
         $modelNav->save(['id'=>17,'nombre'=>$menu]);
        }
-       if($m5 !==''){
+       if($m5 !=''){
         $modelNav->save(['id'=>3,'nombre'=>$m1]);
         $modelNav->save(['id'=>4,'nombre'=>$m2]);
         $modelNav->save(['id'=>5,'nombre'=>$m3]);
@@ -61,6 +61,19 @@ class c_nav extends BaseController{
         $modelNav->save(['id'=>15,'nombre'=>$sm8]);
         $modelNav->save(['id'=>16,'nombre'=>$sm9]);
 
+       }else{
+        $modelNav->save(['id'=>3,'nombre'=>$m1]);
+        $modelNav->save(['id'=>4,'nombre'=>$m2]);
+        $modelNav->save(['id'=>5,'nombre'=>$m3]);
+        $modelNav->save(['id'=>6,'nombre'=>$m4]);
+        $modelNav->save(['id'=>8,'nombre'=>$sm1]);
+        $modelNav->save(['id'=>10,'nombre'=>$sm3]);
+        $modelNav->save(['id'=>11,'nombre'=>$sm4]);
+        $modelNav->save(['id'=>12,'nombre'=>$sm5]);
+        $modelNav->save(['id'=>13,'nombre'=>$sm6]);
+        $modelNav->save(['id'=>14,'nombre'=>$sm7]);
+        $modelNav->save(['id'=>15,'nombre'=>$sm8]);
+        $modelNav->save(['id'=>16,'nombre'=>$sm9]);
        }
 
 
