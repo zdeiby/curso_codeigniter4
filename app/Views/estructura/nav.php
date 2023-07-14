@@ -202,7 +202,7 @@ try{
               </label>
                  
                         <ul class="dropdown-menu submenu text-center div1" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item liT elemento-lectura li1" id="sm10" href="../../../ufm/index.php/nuevapagina"><?php echo $nav[14]['nombre'] ?></a></li>
+                            <li><a class="dropdown-item liT elemento-lectura li1" id="sm10" href="../../../ufm/index.php/nuevapagina"></a></li>
                          <!--   <li><b  class="delete b" >x</b><a class="dropdown-item liT elemento-lectura li2" href="../../../ufm/index.php/galeria-videos"></a></li> -->
                        <!--     <li><a class="dropdown-item liT elemento-lectura" href="../../../ufm/index.php/agg-fotos">Agregar Fotos <b  class="delete " >x</b></a></li> -->
                          <!--   <li><b  class="delete b" >x</b><a  class="dropdown-item liT elemento-lectura a lit elemento-lectura3" href="../../../ufm/index.php/videos-agg">editar apartado</a></li> -->
